@@ -1028,5 +1028,455 @@
     "hadith_refs": ["Sunan Abu Dawud 2377", "Sunan Ibn Majah 1678"],
     "madhab": "Hanafi",
     "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 104,
+    "category": "Taharat (Purification)",
+    "question": "What are the fard (obligatory) and sunnah acts of ghusl?",
+    "answer": "According to Fatawa Darul Uloom Deoband, the fard acts of ghusl are three: (1) Rinsing the mouth thoroughly (madmadah) so water reaches every part including teeth and gums, (2) Rinsing the nostrils (istinshaq) up to the soft bone, (3) Washing the entire body including hair so not even a hair's breadth remains dry. The sunnah method adds: begin with washing both hands, remove any impurity (istinja), perform complete wudu, pour water over the head three times rubbing through the hair, then pour over the right shoulder, then left, ensuring water reaches every fold and crevice of the body.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sahih Bukhari 248", "Sahih Muslim 316"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 105,
+    "category": "Taharat (Purification)",
+    "question": "What are the nawaqiz (nullifiers) of wudu according to Darul Uloom Deoband?",
+    "answer": "Fatawa Darul Uloom Deoband confirms the Hanafi position: wudu is nullified by (1) anything exiting from the front or back passage — urine, stool, gas, blood, worms, or stones, (2) blood, pus, or yellow discharge flowing from a wound to a place that requires cleaning, (3) vomiting a full mouthful or multiple smaller vomits equaling a mouthful, (4) sleeping in a lying position or leaning heavily on something such that if it were removed one would fall, (5) loss of consciousness due to fainting, intoxication, or madness, (6) laughing audibly (with sound) during salah — this breaks wudu and salah both. Mere touching of a woman or looking at her private parts does not break wudu in the Hanafi school.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sunan Abu Dawud 179", "Sunan Tirmidhi 96"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 106,
+    "category": "Taharat (Purification)",
+    "question": "When is tayammum permissible and how is it performed?",
+    "answer": "Fatawa Darul Uloom Deoband states: tayammum is permitted when (1) water is not available within a distance of approximately one mile (shar'i distance), (2) one is sick and using water would worsen the illness or cause serious harm, (3) water is available but one fears harm from cold, (4) one fears missing the janazah (funeral) prayer if wudu is performed. Method: make niyyah, say Bismillah, strike both palms on clean earth or dust once, blow lightly and wipe the face completely, strike again and wipe both arms including the elbows. Tayammum is invalidated by all that invalidates wudu, plus the availability of water.",
+    "quran_refs": ["Al-Maidah 5:6", "Al-Nisa 4:43"],
+    "hadith_refs": ["Sahih Bukhari 336", "Sahih Muslim 368"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 107,
+    "category": "Taharat (Purification)",
+    "question": "What are the rules of istinja (cleaning after relieving oneself)?",
+    "answer": "Istinja (cleaning after relieving oneself) is wajib in the Hanafi school. Water is the primary means and ensures complete purity. Dry material (stones, tissue — istijmar) may be used if water is unavailable, using a minimum of three wipes with an odd number until clean, provided the impurity has not spread beyond the normal outlet area. Using only dry material is sufficient (the wudu is valid) but using water after is better. It is forbidden to use bone, food, or sacred materials for istijmar. One must use the left hand for istinja; the right hand is not to be used.",
+    "quran_refs": ["Al-Tawbah 9:108"],
+    "hadith_refs": ["Sunan Abu Dawud 41", "Sunan Tirmidhi 19"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 108,
+    "category": "Taharat (Purification)",
+    "question": "What is considered najis (impure) and how is it purified?",
+    "answer": "Fatawa Darul Uloom Deoband categorizes najasat as: (1) Najasah Ghalizah (heavy impurity) — urine, stool, blood, wine, pork, animal carcass — must be washed until the impurity is removed; if more than dirham size on clothing or body, salah is invalid; (2) Najasah Khafifah (light impurity) — urine of animals whose meat is halal — salah is valid if less than one quarter of the garment is affected. Method of purification: for liquid impurity, wash three times squeezing each time; for solid impurity, scrape off then wash. Ground purifies by drying naturally in the sun if the impurity was liquid.",
+    "quran_refs": ["Al-Maidah 5:6", "Al-Muddaththir 74:4"],
+    "hadith_refs": ["Sahih Bukhari 221", "Sunan Abu Dawud 382"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 109,
+    "category": "Salah (Prayer)",
+    "question": "Should Ameen be said loudly or quietly after Surah Fatiha?",
+    "answer": "According to Fatawa Darul Uloom Deoband, the Hanafi position is that Ameen should be said quietly (sirran) — not aloud. This is based on the hadith of Wail ibn Hujr (RA) who described the Prophet (PBUH) saying Ameen with a low voice (Sunan Abu Dawud 932, Sunan Tirmidhi 248). The Hanafi school holds that Ameen is a dua (supplication), and supplications are generally made quietly. This differs from the Shafi'i position of saying Ameen aloud (jahr). Both positions are based on authentic narrations, but the Hanafi ruling of sirr (quiet) is well-established and should be followed by Hanafi followers.",
+    "quran_refs": ["Al-Fatiha 1:7"],
+    "hadith_refs": ["Sunan Abu Dawud 932", "Sunan Tirmidhi 248"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 110,
+    "category": "Salah (Prayer)",
+    "question": "What is the correct method of Witr prayer according to Hanafi fiqh?",
+    "answer": "Fatawa Darul Uloom Deoband confirms: Witr is 3 rakats and is wajib in the Hanafi school. Method: pray 2 rakats normally with tashahhud after the second rakat, stand for the third rakat, recite Surah Fatiha followed by another surah, then BEFORE going into ruku raise both hands to the earlobes saying Allahu Akbar (like takbir al-tahrimah), fold hands and recite Dua al-Qunoot (Allahumma inna nasta'inuka...) silently, then proceed with ruku and complete the prayer. If one forgets Qunoot and goes into ruku, Sajda al-Sahw is required. Missing witr requires qada like any wajib prayer.",
+    "quran_refs": ["Al-Muzammil 73:2-4"],
+    "hadith_refs": ["Sunan Abu Dawud 1416", "Sunan Nasai 1700"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 111,
+    "category": "Salah (Prayer)",
+    "question": "What are the rules of qasr (shortened) prayer for a traveler?",
+    "answer": "Fatawa Darul Uloom Deoband: qasr (shortening 4-rakat fard prayers to 2) is wajib (obligatory, not optional) for a musafir (traveler) in the Hanafi school. One becomes a musafir when intending to travel at least 77.25 km (48 miles/15 shar'i farsakhs) from one's city boundary. Qasr applies to: Zuhr (2 instead of 4), Asr (2 instead of 4), and Isha (2 instead of 4). Fajr (2) and Maghrib (3) remain unchanged. Qasr ends when one returns home or forms the intention of staying 15 days or more at a destination (becoming a muqim). If a musafir prays full 4 rakats intentionally, the extra 2 are nafl.",
+    "quran_refs": ["Al-Nisa 4:101"],
+    "hadith_refs": ["Sahih Bukhari 1101", "Sahih Muslim 686"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 112,
+    "category": "Salah (Prayer)",
+    "question": "What is the correct method of Salat al-Janazah (funeral prayer)?",
+    "answer": "Fatawa Darul Uloom Deoband: Salat al-Janazah is fard kifayah. Method: (1) Stand facing qiblah with the deceased in front, (2) Make niyyah for janazah prayer, (3) Say Allahu Akbar (first takbir) — fold hands and recite Thana (Subhanakallahumma...) silently, (4) Say Allahu Akbar (second takbir) — recite Durud Ibrahim silently, (5) Say Allahu Akbar (third takbir) — recite Dua for the deceased silently (Allahummaghfir lahu warhamhu...), (6) Say Allahu Akbar (fourth takbir), then give salaam on both sides. No ruku or sujud. The imam stands near the chest of the male deceased and near the middle of a female deceased.",
+    "quran_refs": ["Al-Tawbah 9:84"],
+    "hadith_refs": ["Sahih Bukhari 1335", "Sahih Muslim 951"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 113,
+    "category": "Salah (Prayer)",
+    "question": "Should a muqtadi (follower) recite Surah Fatiha behind the imam?",
+    "answer": "Fatawa Darul Uloom Deoband firmly holds the Hanafi position: the muqtadi (follower in congregation) should NOT recite Surah Fatiha or any Quran behind the imam. The imam's recitation is sufficient for the follower. This is based on the Quran (7:204) 'When the Quran is recited, listen to it and remain silent' and the hadith 'Whoever has an imam, then the imam's recitation is his recitation' (Sunan Ibn Majah 850). The follower should remain silent during the imam's recitation and engage in quiet dhikr. Reciting behind the imam is considered makruh (disliked) in the Hanafi school and may cause disruption in the congregational prayer.",
+    "quran_refs": ["Al-A'raf 7:204"],
+    "hadith_refs": ["Sunan Ibn Majah 850", "Sunan Abu Dawud 604"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 114,
+    "category": "Salah (Prayer)",
+    "question": "When does Sajdah al-Sahw (prostration of forgetfulness) become wajib?",
+    "answer": "Fatawa Darul Uloom Deoband: Sajdah al-Sahw becomes wajib when a wajib act of salah is omitted, delayed, or changed. This includes: (1) omitting the first qa'dah (sitting after 2 rakats in a 4-rakat prayer), (2) forgetting to recite Dua al-Qunoot in Witr, (3) reciting additional surah in the third or fourth rakat of fard salah, (4) performing ruku or sujud twice, (5) standing for a fifth rakat in a 4-rakat prayer then sitting back. The method (Hanafi): after the final tashahhud, give ONE salam to the right, perform two sajdahs, sit again, recite full tashahhud + durud + dua, then give salam on both sides.",
+    "quran_refs": [],
+    "hadith_refs": ["Sahih Bukhari 1224", "Sahih Muslim 574"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 115,
+    "category": "Salah (Prayer)",
+    "question": "What is the daleel (evidence) for Taraweeh being 20 rakats?",
+    "answer": "Fatawa Darul Uloom Deoband: the 20-rakat Taraweeh is established by the ijma (consensus) of the Sahabah (companions). Umar ibn al-Khattab (RA) gathered the Muslims on 20 rakats of Taraweeh and all Sahabah present in Madinah agreed without objection — this is ijma, the strongest form of shar'i evidence. Imam Malik narrated in his Muwatta that the people of Madinah prayed 20 rakats (Muwatta 252). Al-Bayhaqi (Sunan al-Kubra 4617) narrated it with a sahih chain. The 8-rakat position is based on the general Tahajjud hadith of Aisha (RA), not specifically Taraweeh. Darul Uloom Deoband holds 20 rakats as the established and unanimously agreed-upon sunnah.",
+    "quran_refs": ["Al-Isra 17:79"],
+    "hadith_refs": ["Muwatta Imam Malik 252", "Sunan al-Bayhaqi 4617", "Sahih Bukhari 2010"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 116,
+    "category": "Sawm (Fasting)",
+    "question": "Does receiving an injection break the fast?",
+    "answer": "Fatawa Darul Uloom Deoband: an intramuscular or intravenous injection does NOT break the fast in the Hanafi school, because it does not enter through a recognized body opening (mouth, nose, ears, front/back passage). The fast remains intact. However, a glucose drip (IV nutrition) that provides nourishment to the body: many scholars of Darul Uloom recommend caution and making up the fast as a precaution, though technically the primary ruling is that it does not break the fast. Injections used for medical treatment (antibiotics, insulin, pain relief) definitely do not break the fast. One should take all necessary medications and not endanger health.",
+    "quran_refs": ["Al-Baqarah 2:185"],
+    "hadith_refs": ["Fatawa Darul Uloom Deoband Vol. 6"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 117,
+    "category": "Sawm (Fasting)",
+    "question": "If someone eats or drinks forgetfully during Ramadan, is the fast broken?",
+    "answer": "Fatawa Darul Uloom Deoband: eating or drinking forgetfully (without remembering one is fasting) does NOT break the fast. The Prophet (PBUH) said: 'Whoever forgets he is fasting and eats or drinks, let him complete his fast, for Allah has fed him and given him drink' (Sahih Bukhari 1933, Sahih Muslim 1155). As soon as one remembers, they must immediately stop eating/drinking and continue the fast. No qada or kaffarah is required. This ruling is the unanimous position of all four madhabs. However, if one intentionally continues eating after remembering, the fast is broken and qada + kaffarah become wajib.",
+    "quran_refs": ["Al-Baqarah 2:286"],
+    "hadith_refs": ["Sahih Bukhari 1933", "Sahih Muslim 1155"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 118,
+    "category": "Sawm (Fasting)",
+    "question": "What is the difference between fidya and kaffarah in fasting?",
+    "answer": "Fatawa Darul Uloom Deoband explains: Fidya is the monetary compensation paid by a person who is permanently unable to fast (chronic illness, extreme old age) — for each missed fast, they feed one poor person a meal equivalent to sadaqah al-fitr (approximately 1.6 kg wheat). Fidya does NOT make qada obligatory. Kaffarah is the heavy expiation for deliberately breaking a Ramadan fast (by eating, drinking, or intercourse intentionally): it requires freeing a slave (not applicable today), OR 60 consecutive days of fasting, OR feeding 60 poor people. Kaffarah is in addition to qada. Missing a fast due to travel or illness only requires qada, not fidya or kaffarah.",
+    "quran_refs": ["Al-Baqarah 2:184"],
+    "hadith_refs": ["Sahih Bukhari 1936", "Fatawa Darul Uloom Deoband Vol. 6"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 119,
+    "category": "Sawm (Fasting)",
+    "question": "What are the conditions and rules of I'tikaf in Ramadan?",
+    "answer": "Fatawa Darul Uloom Deoband: I'tikaf in the last 10 days of Ramadan is sunnah mu'akkadah 'ala al-kifayah — if at least one person in a community observes it, the sunnah is fulfilled for all; if no one does, all are sinful. Conditions: Muslim, sane, in state of purity from janabah (ghusl if needed), intention (niyyah), remain inside the mosque. Duration: from before Maghrib of the 20th Ramadan until Eid moon is sighted. Permissible exits: only for toilet, wudu, or fard ghusl. Prohibited: leaving for non-necessity, marital relations, buying/selling inside the mosque. If i'tikaf is broken, it must be made up (1 day qada for sunnah i'tikaf that was interrupted).",
+    "quran_refs": ["Al-Baqarah 2:187"],
+    "hadith_refs": ["Sahih Bukhari 2026", "Sahih Muslim 1167"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 120,
+    "category": "Zakat",
+    "question": "What is the nisab for Zakat on gold and silver?",
+    "answer": "Fatawa Darul Uloom Deoband confirms: the nisab (minimum threshold) for gold is 7.5 tola = 87.48 grams of pure gold. For silver, it is 52.5 tola = 612.36 grams. Zakat is 2.5% of the total zakatable wealth after one full lunar year (hawl) passes on the nisab amount. If one possesses only gold, use gold nisab; only silver, use silver nisab; a combination of gold, silver, cash, and business inventory — combine their values and compare to the silver nisab (which is lower and more commonly used today as it is more favorable to the poor). This is the ruling of Fatawa Darul Uloom Deoband following Imam Abu Hanifa.",
+    "quran_refs": ["Al-Tawbah 9:34-35", "Al-Tawbah 9:103"],
+    "hadith_refs": ["Sunan Abu Dawud 1572", "Sunan Tirmidhi 626"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 121,
+    "category": "Zakat",
+    "question": "How is Zakat calculated on business stock and inventory?",
+    "answer": "Fatawa Darul Uloom Deoband: Zakat is obligatory on business inventory (mal al-tijarah) — goods purchased for resale. Calculate on your Zakat anniversary date: (1) Market value of all trading stock/inventory, (2) Add cash in hand and bank accounts, (3) Add receivable debts (money owed to you), (4) Subtract all outstanding debts and liabilities. If the net total reaches nisab and one lunar year has passed, pay 2.5%. Fixed business assets (machinery, vehicles, office equipment, land) used in operations are NOT zakatable — only trading stock and liquid assets. Raw materials purchased for manufacturing are zakatable at cost price.",
+    "quran_refs": ["Al-Baqarah 2:267"],
+    "hadith_refs": ["Sunan Abu Dawud 1562", "Fatawa Darul Uloom Deoband Vol. 5"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 122,
+    "category": "Zakat",
+    "question": "Who are the eight categories of Zakat recipients (masarif al-Zakat)?",
+    "answer": "Fatawa Darul Uloom Deoband: Allah specified eight categories in Surah Al-Tawbah 9:60: (1) Al-Fuqara — the poor who have some means but below nisab, (2) Al-Masakin — the destitute with nothing, (3) Al-Amilin — Zakat collectors appointed by an Islamic state, (4) Al-Mu'allafah Qulubuhum — new Muslims or those whose hearts are to be reconciled, (5) Fi al-Riqab — freeing slaves (not applicable today), (6) Al-Gharimin — those overwhelmed by debt for permissible purposes, (7) Fi Sabilillah — in the way of Allah (includes students of Islamic knowledge and, per many scholars, general Islamic causes), (8) Ibn al-Sabil — a stranded traveler without funds. Zakat cannot be given to Banu Hashim (Prophet's family), one's own dependents, or those who own nisab.",
+    "quran_refs": ["Al-Tawbah 9:60"],
+    "hadith_refs": ["Sahih Bukhari 1395", "Sunan Abu Dawud 1630"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 123,
+    "category": "Nikah (Marriage)",
+    "question": "What are the conditions (sharait) for a valid Nikah?",
+    "answer": "Fatawa Darul Uloom Deoband: for a nikah to be valid (sahih) the following conditions must be met: (1) Both parties must be Muslim or (for a Muslim man) the woman must be from the Ahl al-Kitab (Jewish/Christian), (2) Both must be sane and of age, or their guardians must consent for minors, (3) Ijab (offer) and qabool (acceptance) must be in the same sitting using words of marriage (nikah, tazwij), (4) At least two adult Muslim male witnesses (or one male and two female) must be present and hear the offer and acceptance, (5) Mehr must be agreed upon (amount can be decided later but obligation is established), (6) The woman must not be in the iddah of another man, not married to another, not a mahram of the man. There is no requirement for written documentation in Islamic fiqh, though it is strongly recommended.",
+    "quran_refs": ["Al-Baqarah 2:235", "Al-Nisa 4:4"],
+    "hadith_refs": ["Sahih Bukhari 5133", "Sunan Tirmidhi 1020"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 124,
+    "category": "Nikah (Marriage)",
+    "question": "What is mehr (mahr) — its types, minimum amount, and ruling?",
+    "answer": "Fatawa Darul Uloom Deoband: Mehr is the obligatory financial gift from the husband to the wife — it is her exclusive right and cannot be taken back without her genuine, free consent. Types: (1) Mehr Mu'ajjal — prompt mehr paid at time of nikah or on demand, (2) Mehr Mu'ajjal — deferred mehr paid at an agreed future time or upon divorce/death. The minimum mehr in the Hanafi school is 10 dirhams (approximately 30.618g of silver value). If no amount is stipulated, mehr al-mithl (customary mehr based on similar women in her family) applies. If the husband dies before payment, mehr becomes a debt on his estate with priority over inheritance. A wife may forgive mehr voluntarily but cannot be pressured to do so.",
+    "quran_refs": ["Al-Nisa 4:4", "Al-Nisa 4:24", "Al-Baqarah 2:237"],
+    "hadith_refs": ["Sahih Bukhari 5149", "Sunan Abu Dawud 2125"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 125,
+    "category": "Nikah (Marriage)",
+    "question": "What are the types (iqsaam) of talaq in Islamic fiqh?",
+    "answer": "Fatawa Darul Uloom Deoband explains the three types of talaq: (1) Talaq Raj'i — revocable divorce; the husband may take the wife back (ruju') before the completion of the iddah without a new nikah or new mehr. Only one or two talaqs pronounced in separate periods of purity (tuhr) qualify as raj'i; (2) Talaq Ba'in — irrevocable; a new nikah with new mehr is required to reunite. Includes: three talaqs, talaq given in exchange for compensation (khula), or talaq ba'in-specific wording; (3) Talaq Mughallazah — permanently irrevocable (three talaqs total); reunion is only possible if the wife naturally marries another man, that marriage is consummated, and that husband then divorces her of his own will. The Sunnah method is one revocable talaq during a period of purity without intercourse, then waiting for the iddah to end.",
+    "quran_refs": ["Al-Baqarah 2:229-230", "Al-Talaq 65:1"],
+    "hadith_refs": ["Sahih Bukhari 5253", "Sunan Abu Dawud 2196"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 126,
+    "category": "Nikah (Marriage)",
+    "question": "What are the rules of iddah (waiting period) after divorce or widowhood?",
+    "answer": "Fatawa Darul Uloom Deoband: Iddah after divorce for a woman who menstruates is 3 complete menstrual cycles (quru in Hanafi fiqh means periods of tuhr — purity). For a woman who does not menstruate (elderly or pre-pubescent): 3 lunar months. If pregnant: until delivery regardless of time. Iddah after the husband's death: 4 months and 10 days (if not pregnant), or until delivery (if pregnant) — whichever is longer. During iddah: (1) the woman must remain in the marital home, (2) she cannot remarry, (3) she receives maintenance from the husband during revocable divorce iddah, (4) she should not display adornment (mourning — ihdad — is specifically for widows). The iddah serves to confirm non-pregnancy, honor the marriage, and allow time for reconciliation.",
+    "quran_refs": ["Al-Baqarah 2:228", "Al-Baqarah 2:234", "Al-Talaq 65:1-4"],
+    "hadith_refs": ["Sahih Bukhari 5321", "Sunan Abu Dawud 2280"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 127,
+    "category": "Nikah (Marriage)",
+    "question": "What is Khula and how is it obtained?",
+    "answer": "Fatawa Darul Uloom Deoband: Khula is the dissolution of marriage initiated by the wife, usually by returning the mehr or an agreed compensation to the husband. It is permissible when the wife has a genuine dislike or fear for the marriage and cannot maintain Allah's limits. The Prophet (PBUH) validated the khula of the wife of Thabit ibn Qays (Sahih Bukhari 5273) when she returned his garden (her mehr). Process: (1) The wife requests khula and offers compensation (usually the mehr), (2) The husband accepts and pronounces separation, (3) This counts as one irrevocable talaq ba'in — a new nikah is required to reunite. If the husband refuses, the wife may approach an Islamic judge (Qadi). Khula is the wife's right when the marriage becomes harmful to her.",
+    "quran_refs": ["Al-Baqarah 2:229"],
+    "hadith_refs": ["Sahih Bukhari 5273", "Sunan Abu Dawud 2228"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 128,
+    "category": "Tijarah (Business & Finance)",
+    "question": "What is the Islamic ruling on sood (riba/interest) and its daleel?",
+    "answer": "Fatawa Darul Uloom Deoband: riba (interest/usury) is absolutely haram — one of the gravest sins in Islam. Allah says in the Quran: 'Allah has permitted trade and forbidden riba' (2:275) and 'O believers, fear Allah and give up what remains of riba if you are true believers. If you do not, then be warned of war from Allah and His Messenger' (2:278-279). The Prophet (PBUH) cursed the one who takes riba, the one who gives it, the one who writes the contract, and the witnesses — saying all are equal in sin (Sahih Muslim 1598). This covers: bank interest earned or paid, credit card interest, loan interest, and any arrangement where money grows simply by lending. Fatawa Darul Uloom categorically prohibits all forms of interest-based transactions.",
+    "quran_refs": ["Al-Baqarah 2:275-279", "Al-Imran 3:130", "Al-Nisa 4:161"],
+    "hadith_refs": ["Sahih Muslim 1598", "Sahih Bukhari 2086"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 129,
+    "category": "Tijarah (Business & Finance)",
+    "question": "What is the Hanafi ruling on conventional insurance?",
+    "answer": "Fatawa Darul Uloom Deoband holds that conventional insurance is not permissible because it contains three major elements of prohibition: (1) Gharar (uncertainty) — the amount and timing of benefit are unknown, resembling a game of chance, (2) Maysir (gambling) — premiums may be lost entirely or a large payout received for small premiums, like gambling, (3) Riba — insurance companies invest premiums in interest-bearing instruments. The halal alternative is Takaful (Islamic cooperative insurance) based on mutual donation (tabarru). For legally required insurance (car insurance in some countries), one fulfills the legal minimum without intent to profit. Darul Uloom recommends Takaful wherever available.",
+    "quran_refs": ["Al-Maidah 5:90", "Al-Baqarah 2:219"],
+    "hadith_refs": ["Sunan Abu Dawud 3503", "Fatawa Darul Uloom Deoband Vol. 15"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 130,
+    "category": "Tijarah (Business & Finance)",
+    "question": "What is the ruling on online business and e-commerce in Islam?",
+    "answer": "Fatawa Darul Uloom Deoband: Online business and e-commerce is permissible in Islam provided: (1) The product or service being sold is halal, (2) The description is accurate and not deceptive (no false advertising), (3) Payment is received before delivery or a clear deferred payment agreement exists, (4) No gharar (extreme uncertainty) in the transaction — the product specifications must be clear, (5) Dropshipping is permissible if the seller discloses they will source the product and takes responsibility for delivery. Prohibited online businesses: selling haram goods, digital piracy, gambling sites, interest-based lending platforms, and deceptive investment schemes. Online halal trade is encouraged as the Quran permits trade (Al-Baqarah 2:275).",
+    "quran_refs": ["Al-Baqarah 2:275", "Al-Nisa 4:29"],
+    "hadith_refs": ["Sahih Bukhari 2072", "Sunan Abu Dawud 3503"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 131,
+    "category": "Tijarah (Business & Finance)",
+    "question": "Is investing in the stock market permissible in Islam?",
+    "answer": "Fatawa Darul Uloom Deoband: Stock market investment requires careful analysis. Permissible if: (1) The company's primary business is halal (not alcohol, tobacco, weapons, interest-based finance, pornography), (2) The company does not have significant interest-based debt (some scholars allow up to 33% of total assets in debt as a practical threshold), (3) The investment is genuine ownership (not pure speculation/day trading), (4) Any dividends from haram activities are purified by donating that proportion to charity. Not permissible: investing in haram businesses, buying on margin (borrowed money), short-selling (selling what you don't own), and purely speculative day-trading resembling gambling. Darul Uloom recommends consulting a contemporary Islamic finance scholar for specific company analysis.",
+    "quran_refs": ["Al-Baqarah 2:275", "Al-Baqarah 2:278"],
+    "hadith_refs": ["Fatawa Darul Uloom Deoband Vol. 15", "Contemporary Scholarly Research"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 132,
+    "category": "Tijarah (Business & Finance)",
+    "question": "What is the Islamic ruling on taking a loan without interest?",
+    "answer": "Fatawa Darul Uloom Deoband: a loan (qard) without any interest is not only permissible but highly encouraged in Islam. The Quran calls it 'qard hasan' (a beautiful loan) and promises great reward for the lender. Conditions for a valid Islamic loan: (1) No interest or additional charge upon repayment, (2) No condition that benefits the lender (e.g., the borrower must sell their produce to the lender — this hidden benefit makes it riba), (3) The exact amount borrowed must be repaid, (4) Voluntary gifts from the borrower after repayment are permissible. Mutual fund lending, community cooperative savings schemes (committees/bisi without interest), and family loans are all permissible forms of Islamic finance.",
+    "quran_refs": ["Al-Baqarah 2:245", "Al-Hadid 57:11"],
+    "hadith_refs": ["Sahih Bukhari 2061", "Sunan Ibn Majah 2421"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 133,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the shar'i ruling on tasweer (photography and digital images)?",
+    "answer": "Fatawa Darul Uloom Deoband holds that making images of animate beings (humans, animals) is haram based on the strong ahadith warning image-makers of severe punishment on the Day of Judgment (Bukhari 5950, Muslim 2107). However, regarding photography specifically, Darul Uloom Deoband distinguishes: (1) Drawing/painting animate beings by hand: haram by consensus, (2) Photography (capturing light on film/sensor): scholars of Darul Uloom differ — the majority consider it haram as it produces the same forbidden image, while some contemporary scholars permit it for necessity (ID documents, education, news). Digital images on screens are more debated. The fatwa of Darul Uloom Deoband is that avoiding photography of animate beings is the cautious and preferred position.",
+    "quran_refs": ["Al-Imran 3:49"],
+    "hadith_refs": ["Sahih Bukhari 5950", "Sahih Muslim 2107"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 134,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the Hanafi ruling on music (musiqi) — is it haram?",
+    "answer": "Fatawa Darul Uloom Deoband: music with instruments is haram according to the Hanafi school and the majority of classical scholars. The daleel includes: (1) Quran: 'And among people is he who buys the amusement of speech (lahw al-hadith) to mislead from the way of Allah' (31:6) — Ibn Abbas and other Sahabah interpreted this as music and singing, (2) Hadith: 'There will be people of my ummah who will consider silk, alcohol, musical instruments (ma'azif) and intoxicants to be halal' (Sahih Bukhari 5590). Darul Uloom Deoband holds: all instruments (stringed, wind, percussion except duff) are haram. The duff (simple hand drum) is permitted at weddings for women. Nasheed (Islamic poetry) without instruments is permissible. Music with profane lyrics is doubly forbidden.",
+    "quran_refs": ["Luqman 31:6", "Al-Isra 17:64"],
+    "hadith_refs": ["Sahih Bukhari 5590", "Sunan Abu Dawud 3685"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 135,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What are the adab (etiquettes) of making dua (supplication)?",
+    "answer": "Fatawa Darul Uloom Deoband: the adab of dua include: (1) Be in a state of wudu facing the qiblah, (2) Raise both hands to chest/shoulder height with palms facing upward, (3) Begin with praise of Allah (Alhamdulillah) and Durud on the Prophet (PBUH), (4) Confess your sins and show humility, (5) Make dua with certainty that Allah will answer, (6) Repeat the dua three times, (7) End with Ameen and wipe your face with both hands. Best times for dua: the last third of the night, between adhan and iqamah, during sujud, on Fridays after Asr, when fasting at iftar, during rain, in the state of ihram. Dua in any language is valid — Allah hears all.",
+    "quran_refs": ["Al-Baqarah 2:186", "Ghafir 40:60"],
+    "hadith_refs": ["Sunan Abu Dawud 1481", "Sunan Tirmidhi 3556"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 136,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What are the rules of Qurbani (Udhiyah) — who must offer it and how?",
+    "answer": "Fatawa Darul Uloom Deoband: Qurbani is wajib (obligatory) on every Muslim who is adult, sane, a resident (not a traveler), and possesses nisab (52.5 tola silver or equivalent) on any of the three days of Qurbani. Time: from after the Eid prayer on 10th Dhul Hijjah until sunset of 12th Dhul Hijjah. Animals and shares: a goat or sheep counts as one Qurbani for one person; a cow, buffalo, or camel can be shared among up to 7 persons each with the intention of Qurbani or Aqiqah. Animal conditions: must be of minimum age (goat: 1 year, sheep: 6 months if fat enough, cow: 2 years, camel: 5 years), free of major defects (blind, lame, severely ill, extremely thin). It is recommended to slaughter oneself if able, or be present. The meat should be divided: one-third each for self, family/friends, and the poor.",
+    "quran_refs": ["Al-Hajj 22:34-36", "Al-Kawthar 108:2"],
+    "hadith_refs": ["Sahih Bukhari 5546", "Sunan Abu Dawud 2795"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 137,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is Aqiqah — its ruling, timing, and method?",
+    "answer": "Fatawa Darul Uloom Deoband: Aqiqah is sunnah mu'akkadah — a confirmed sunnah upon the birth of a child. For a boy: two goats/sheep; for a girl: one goat/sheep. Timing: preferably on the 7th day after birth; if missed, then 14th, 21st, or any time before puberty. On the 7th day: the baby's head is shaved, hair is weighed and its equivalent in silver is given as charity, and the child is given an Islamic name. The aqiqah animal must meet the same conditions as Qurbani animals. The meat may be eaten, distributed to family, friends, and the poor. Aqiqah is said to be a ransom (fidya) for the child — it protects the child and is a form of gratitude to Allah for the gift of a child.",
+    "quran_refs": [],
+    "hadith_refs": ["Sunan Abu Dawud 2837", "Sunan Tirmidhi 1522", "Sunan Nasai 4220"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 138,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is Isal al-Sawab (sending reward to the deceased) permissible?",
+    "answer": "Fatawa Darul Uloom Deoband: Isal al-Sawab — performing good deeds and dedicating their reward to deceased Muslims — is permissible and beneficial for the deceased. This includes: reciting Quran and dedicating the reward, giving sadaqah on their behalf, performing Hajj or Umrah on their behalf, fasting on their behalf (if they had vowed fasts), making dua for their forgiveness. The basis is the hadith that sadaqah reaches the deceased (Sahih Muslim 1004) and the Prophet's own practice of sacrificing on behalf of deceased family members. The Hanafi school confirms this is valid. However, group gatherings with specific customs of recitation on fixed days (3rd, 10th, 40th) are not established from Sunnah — simple individual isal is the correct practice.",
+    "quran_refs": ["Al-Hashr 59:10", "Al-Tur 52:21"],
+    "hadith_refs": ["Sahih Muslim 1004", "Sahih Bukhari 1388"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 139,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on visiting graves?",
+    "answer": "Fatawa Darul Uloom Deoband: visiting graves is sunnah — the Prophet (PBUH) said 'I used to forbid you from visiting graves, but now visit them for they remind you of the Hereafter' (Sahih Muslim 977). Correct conduct at graves: (1) Give salaam to the deceased (As-salamu 'alaykum ahl al-diyar...), (2) Recite Surah Fatiha, Surah Ikhlas, or any Quran and make Isal al-Sawab, (3) Make dua for the deceased, (4) Reflect on death and prepare for the Hereafter. Forbidden at graves: (1) Prostrating to or seeking intercession from the graves as if the deceased can independently fulfill requests, (2) Building structures over graves, (3) Lighting candles on graves, (4) Wailing and crying excessively. Women visiting graves: permitted in Hanafi fiqh if they can observe proper adab and not wail.",
+    "quran_refs": ["Al-Munafiqun 63:10"],
+    "hadith_refs": ["Sahih Muslim 977", "Sunan Abu Dawud 3234"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 140,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on smoking cigarettes in Islam?",
+    "answer": "Fatawa Darul Uloom Deoband: smoking is haram (prohibited) based on the following principles: (1) It causes definite harm to the body — the Quran prohibits self-harm: 'Do not throw yourselves into destruction' (2:195), (2) It wastes wealth on something harmful — prohibited by the principle of la darar (no harm), (3) The Prophet (PBUH) said 'There shall be no harm and no reciprocating harm' (Ibn Majah 2341), (4) The harmful effects of tobacco are medically proven: cancer, heart disease, etc. Earlier scholars who considered it merely makruh (disliked) did not have the medical evidence available today. The contemporary fatwa of Darul Uloom Deoband is that smoking is haram. Stopping smoking is wajib when the harm is known.",
+    "quran_refs": ["Al-Baqarah 2:195", "Al-Nisa 4:29"],
+    "hadith_refs": ["Sunan Ibn Majah 2341", "Fatawa Darul Uloom Deoband Vol. 12"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 141,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the Islamic ruling on wasiyat (Islamic will) and miras (inheritance)?",
+    "answer": "Fatawa Darul Uloom Deoband: making a wasiyat (Islamic will) is wajib if one has debts or obligations, and sunnah otherwise. Key rules of wasiyat: (1) A wasiyat can only be made for non-heirs (not those who will inherit), (2) The maximum bequest is one-third of the estate — beyond one-third requires heirs' consent, (3) It must be executed before the debts of the deceased are paid from the estate. Miras (inheritance) is distributed according to the precise Quranic shares (fara'id). The Prophet (PBUH) commanded: 'Learn the fara'id and teach it, for it is half of all knowledge' (Sunan Ibn Majah 2719). Distributing inheritance according to custom rather than Quran is a serious sin. An Islamic inheritance calculator or a scholar of fara'id should be consulted.",
+    "quran_refs": ["Al-Nisa 4:11-12", "Al-Nisa 4:176", "Al-Baqarah 2:180"],
+    "hadith_refs": ["Sunan Ibn Majah 2719", "Sahih Bukhari 6723"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 142,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on keeping a beard — is it wajib or sunnah?",
+    "answer": "Fatawa Darul Uloom Deoband: keeping the beard is wajib (obligatory) for Muslim men. Shaving or trimming it to less than one fist-length is haram. The evidence: (1) The Prophet (PBUH) commanded: 'Lengthen the beards and trim the moustaches — differ from the mushrikeen' (Sahih Bukhari 5893), (2) The Prophet (PBUH) never shaved his beard, (3) The command is explicit and without qualification. The minimum required length in the Hanafi school (per Ibn Umar's practice) is one fist-length measured from under the chin. Trimming within one fist-length is permissible. Shaving completely or trimming below one fist is haram per Darul Uloom Deoband. This is the clear and unambiguous fatwa of Darul Uloom and the classical Hanafi position.",
+    "quran_refs": ["Al-A'raf 7:199"],
+    "hadith_refs": ["Sahih Bukhari 5893", "Sahih Muslim 259"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 143,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is it permissible to cut nails and hair in the first 10 days of Dhul Hijjah?",
+    "answer": "Fatawa Darul Uloom Deoband: for a person who intends to offer Qurbani (udhiyah), it is sunnah to avoid cutting hair and nails from the 1st of Dhul Hijjah until after they have slaughtered their Qurbani animal. This is based on the hadith of the Prophet (PBUH): 'When you see the new moon of Dhul Hijjah and one of you wants to offer a sacrifice, let him refrain from cutting his hair and nails' (Sahih Muslim 1977). This is sunnah (recommended), not wajib — there is no kaffarah if one forgets. If no Qurbani is intended, there is no restriction on cutting hair or nails in Dhul Hijjah. The wisdom is to emulate the state of the Hajj pilgrims who are in ihram.",
+    "quran_refs": ["Al-Hajj 22:34"],
+    "hadith_refs": ["Sahih Muslim 1977", "Sunan Abu Dawud 2791"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 144,
+    "category": "Salah (Prayer)",
+    "question": "What is the ruling on praying Salat al-Duha (Chasht prayer)?",
+    "answer": "Fatawa Darul Uloom Deoband: Salat al-Duha (also called Chasht or Ishraq prayer) is a recommended nafl prayer. Ishraq: prayed approximately 15-20 minutes after sunrise — minimum 2 rakats, maximum 8. Chasht: prayed when the sun has risen well (approximately mid-morning, one-quarter of the day passed) — minimum 2 rakats, maximum 12. The Prophet (PBUH) said: 'Whoever prays Fajr in congregation, then sits in dhikr until sunrise, then prays two rakats, will have the reward of a complete Hajj and Umrah' (Sunan Tirmidhi 586). These are highly recommended prayers that bring immense reward and should be made a regular habit.",
+    "quran_refs": ["Al-Duha 93:1-3"],
+    "hadith_refs": ["Sunan Tirmidhi 586", "Sahih Muslim 720"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 145,
+    "category": "Taharat (Purification)",
+    "question": "What is the ruling on water left over after a cat or dog has drunk from it?",
+    "answer": "Fatawa Darul Uloom Deoband: regarding leftover water (su'r): (1) Cat's leftover water — tahir (pure) and valid for wudu, because the Prophet (PBUH) said cats are not impure and they go around the house (Sunan Abu Dawud 75, Sunan Tirmidhi 92), (2) Dog's leftover water — najis (impure) in the Hanafi school; wudu with it is not valid, and any utensil a dog drinks from must be washed seven times (once with earth), (3) Donkey and mule leftover — doubtful (mashkuk) in the Hanafi school — one should perform wudu with it AND tayammum as a precaution, (4) Halal animals (cow, goat, sheep, horse) — leftover water is pure and valid for purification.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sunan Abu Dawud 75", "Sahih Muslim 279"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 146,
+    "category": "Zakat",
+    "question": "Is Zakat obligatory on money saved for a specific purpose like marriage or house?",
+    "answer": "Fatawa Darul Uloom Deoband: Yes, Zakat is obligatory on saved money regardless of what it is being saved for — whether for marriage, buying a house, education, or any other purpose. The mere intention to use it for a specific purpose does not exempt it from Zakat. As long as the money: (1) is above nisab, (2) a full lunar year has passed, (3) it is in one's ownership and not already spent — Zakat of 2.5% must be paid. Many people incorrectly believe that 'targeted savings' are exempt — this is not the case in the Hanafi school. The only deduction allowed is actual debts that are currently due.",
+    "quran_refs": ["Al-Tawbah 9:34-35"],
+    "hadith_refs": ["Sunan Abu Dawud 1572", "Fatawa Darul Uloom Deoband Vol. 5"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 147,
+    "category": "Tijarah (Business & Finance)",
+    "question": "What is the ruling on working in a bank that deals with interest?",
+    "answer": "Fatawa Darul Uloom Deoband: working in a conventional interest-based bank is not permissible because: (1) The Prophet (PBUH) cursed the writer of riba transactions equally with the one who takes or gives riba (Sahih Muslim 1598), (2) Assisting in a haram transaction makes one a participant in the sin, (3) The salary earned is derived from haram income. One should seek alternative employment as soon as practically possible. However, if there is genuine necessity (no other job available, risk to basic needs), one may continue temporarily while sincerely seeking halal work. Islamic banks and financial institutions are a halal alternative. This fatwa reflects the firm position of Darul Uloom Deoband.",
+    "quran_refs": ["Al-Maidah 5:2", "Al-Baqarah 2:278"],
+    "hadith_refs": ["Sahih Muslim 1598", "Fatawa Darul Uloom Deoband Vol. 15"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
+  },
+  {
+    "id": 148,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on using tasbeeh (prayer beads) for dhikr?",
+    "answer": "Fatawa Darul Uloom Deoband: using tasbeeh (subha/prayer beads) for counting dhikr is permissible and has been practiced by the Sahabah and scholars throughout Islamic history. The Prophet (PBUH) recommended counting tasbeeh on the fingers (Sunan Abu Dawud 1501) as fingers will testify on the Day of Judgment — so counting on fingers is better (afdal). However, using tasbeeh beads is not haram or bid'ah — it is a permissible tool for counting. What matters is the sincerity and presence of heart in the dhikr itself. One should not use it for show or ostentation. Darul Uloom Deoband considers using tasbeeh a mubah (permitted) practice with the caveat that finger counting is more virtuous per the Sunnah.",
+    "quran_refs": ["Al-Ahzab 33:41-42"],
+    "hadith_refs": ["Sunan Abu Dawud 1501", "Sunan Tirmidhi 3583"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Darul Uloom Deoband — Mufti Mahmood ul Hasan Gangohi (رحمہ اللہ)"
   }
 ]

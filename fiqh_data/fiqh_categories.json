@@ -48,6 +48,13 @@
       "arabic": "الحياة اليومية",
       "description": "Everyday fiqh including food, clothing, business dealings, and etiquette",
       "subcategories": ["Food & Drink", "Business (Muamalat)", "Clothing", "Greetings", "Duas"]
+    },
+    {
+      "id": "tijarah",
+      "name": "Tijarah (Business & Finance)",
+      "arabic": "التجارة والمعاملات",
+      "description": "Islamic rulings on business, trade, finance, interest, insurance, and economic transactions",
+      "subcategories": ["Riba (Interest)", "Insurance", "Online Business", "Stock Market", "Loans", "Zakat on Business"]
     }
   ]
 }
