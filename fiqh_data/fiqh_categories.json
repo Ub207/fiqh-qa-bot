@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "id": "taharat",
+      "name": "Taharat (Purification)",
+      "arabic": "الطهارة",
+      "description": "Rules of ritual purity including wudu, ghusl, and tayammum",
+      "subcategories": ["Wudu", "Ghusl", "Tayammum", "Najasah", "Istinja"]
+    },
+    {
+      "id": "salah",
+      "name": "Salah (Prayer)",
+      "arabic": "الصلاة",
+      "description": "Rules governing the five daily prayers and other forms of salah",
+      "subcategories": ["Fard Salah", "Nafl Salah", "Jumu'ah", "Conditions of Salah", "Nullifiers of Salah", "Qada Salah"]
+    },
+    {
+      "id": "sawm",
+      "name": "Sawm (Fasting)",
+      "arabic": "الصوم",
+      "description": "Rules related to fasting in Ramadan and voluntary fasts",
+      "subcategories": ["Ramadan Fasting", "What Breaks Fast", "Exemptions", "Kaffarah", "Voluntary Fasts"]
+    },
+    {
+      "id": "zakat",
+      "name": "Zakat",
+      "arabic": "الزكاة",
+      "description": "Obligatory charity, its calculation and distribution",
+      "subcategories": ["Nisab", "Eligible Recipients", "Zakat on Gold/Silver", "Zakat on Business", "Fitrana"]
+    },
+    {
+      "id": "hajj",
+      "name": "Hajj & Umrah",
+      "arabic": "الحج والعمرة",
+      "description": "Pilgrimage to Makkah and its rituals",
+      "subcategories": ["Conditions of Hajj", "Pillars of Hajj", "Ihram", "Umrah", "Forbidden Acts"]
+    },
+    {
+      "id": "nikah",
+      "name": "Nikah (Marriage)",
+      "arabic": "النكاح",
+      "description": "Islamic rules on marriage, rights, and responsibilities",
+      "subcategories": ["Conditions of Nikah", "Mehr", "Rights of Spouses", "Divorce", "Mahram"]
+    },
+    {
+      "id": "daily_life",
+      "name": "Daily Life & Halal/Haram",
+      "arabic": "الحياة اليومية",
+      "description": "Everyday fiqh including food, clothing, business dealings, and etiquette",
+      "subcategories": ["Food & Drink", "Business (Muamalat)", "Clothing", "Greetings", "Duas"]
+    }
+  ]
+}

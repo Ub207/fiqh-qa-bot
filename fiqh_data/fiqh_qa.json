@@ -1,0 +1,1032 @@
+[
+  {
+    "id": 1,
+    "category": "Taharat (Purification)",
+    "question": "What breaks wudu?",
+    "answer": "According to the Hanafi school, wudu is broken by: (1) anything exiting from the front or back passage, (2) blood or pus flowing from a wound to a place that requires cleaning, (3) vomiting a mouthful, (4) sleeping while lying down or leaning heavily, (5) loss of consciousness or intoxication, (6) laughing loudly during salah (breaks wudu only, not salah for others).",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sahih Bukhari, Book of Wudu, Hadith 135", "Sunan Abu Dawud, Book of Purification"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 2,
+    "category": "Taharat (Purification)",
+    "question": "How do you perform wudu correctly?",
+    "answer": "Wudu (ablution) is performed as follows: (1) Make niyyah (intention), (2) Say Bismillah, (3) Wash both hands up to the wrists three times, (4) Rinse the mouth (madmadah) three times, (5) Sniff water into the nostrils (istinshaq) and clean them three times, (6) Wash the face from forehead to chin and ear to ear three times, (7) Wash the right arm up to and including the elbow three times, then the left arm three times, (8) Perform masah — wipe one quarter of the head once with wet hands, (9) Wipe both ears with wet fingers once, (10) Wash the right foot up to and including the ankle three times, then the left foot three times.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sahih Bukhari 159", "Sahih Muslim 226"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 3,
+    "category": "Taharat (Purification)",
+    "question": "What are the fard (obligatory) acts of wudu?",
+    "answer": "The Hanafi school identifies four fard acts of wudu: (1) Washing the face once (from hairline to chin, ear to ear), (2) Washing both arms including the elbows once, (3) Masah — wiping at least one quarter of the head once with wet hands, (4) Washing both feet including the ankles once. All other acts are sunnah or mustahabb.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sahih Bukhari, Book of Wudu"],
+    "madhab": "Hanafi",
+    "source": "Hidayah, Nur al-Idah"
+  },
+  {
+    "id": 4,
+    "category": "Taharat (Purification)",
+    "question": "When is ghusl (full bath) obligatory?",
+    "answer": "Ghusl becomes obligatory (fard) in the following situations: (1) After sexual intercourse (even without ejaculation), (2) After ejaculation due to any cause including wet dreams, (3) At the end of menstruation (hayd), (4) At the end of post-natal bleeding (nifas), (5) Upon embracing Islam. It is also sunnah mu'akkadah for Jumu'ah prayer.",
+    "quran_refs": ["Al-Maidah 5:6", "Al-Baqarah 2:222"],
+    "hadith_refs": ["Sahih Bukhari 248", "Sahih Muslim 303"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 5,
+    "category": "Taharat (Purification)",
+    "question": "How is ghusl performed correctly?",
+    "answer": "The fard acts of ghusl are three: (1) Rinsing the mouth thoroughly (including reaching all teeth and gums), (2) Rinsing the nostrils, (3) Washing the entire body including hair once so no spot remains dry. The sunnah method adds: begin with washing hands, remove impurity first, perform wudu, then pour water over the head three times, then right shoulder, then left, ensuring all of the body is washed.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sahih Bukhari 248", "Sahih Muslim 316"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 6,
+    "category": "Taharat (Purification)",
+    "question": "What is tayammum and when is it allowed?",
+    "answer": "Tayammum is dry ablution using clean earth or dust. It is permitted when: (1) Water is not available within approximately 1 mile, (2) Using water would harm health (sickness, extreme cold, wound), (3) Water is available but insufficient for wudu/ghusl, (4) One fears missing the funeral prayer. Method: make niyyah, strike clean earth with palms once, wipe the face completely, strike earth again and wipe both arms including elbows.",
+    "quran_refs": ["Al-Maidah 5:6", "Al-Nisa 4:43"],
+    "hadith_refs": ["Sahih Bukhari 336", "Sahih Muslim 368"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 7,
+    "category": "Taharat (Purification)",
+    "question": "Is wudu valid if done without water reaching the skin under a ring?",
+    "answer": "According to the Hanafi school, it is obligatory to ensure water reaches under rings and similar items during wudu. If the ring is tight and water does not reach the skin beneath it, the wudu is invalid for that area and must be repeated. One should move the ring or remove it to ensure water reaches the skin.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sunan Abu Dawud, Book of Purification"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Fatawa Alamgiri"
+  },
+  {
+    "id": 8,
+    "category": "Taharat (Purification)",
+    "question": "What is istinja and how is it performed?",
+    "answer": "Istinja is the cleansing of private parts after relieving oneself. Water should be used to fully remove impurity. Stones or similar materials (istijmar) may be used if water is unavailable, using an odd number (at least three) until clean. Using only stones is sufficient in the Hanafi view as long as the impurity does not spread beyond the normal outlet area. Water is preferred as it ensures complete purification.",
+    "quran_refs": ["Al-Tawbah 9:108"],
+    "hadith_refs": ["Sahih Bukhari, Book of Wudu", "Sunan Tirmidhi 19"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 9,
+    "category": "Taharat (Purification)",
+    "question": "Does touching a woman break wudu in the Hanafi school?",
+    "answer": "No. In the Hanafi school, merely touching a woman (whether a spouse or non-mahram) does not break wudu. This is the position of Imam Abu Hanifa based on the hadith that the Prophet (PBUH) prayed after touching Aisha (RA). Wudu breaks only through the causes specified in Hanafi fiqh such as discharge, blood flow, or sleep.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sunan Abu Dawud 179", "Sunan Nasai"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Al-Mabsut"
+  },
+  {
+    "id": 10,
+    "category": "Taharat (Purification)",
+    "question": "What is the ruling on wiping over leather socks (khuffayn)?",
+    "answer": "Wiping over leather socks (khuff) is permissible for a resident for one day and night (24 hours), and for a traveler for three days and nights (72 hours), starting from the time of the first wudu after wearing them. The wipe is done over the top of the foot area. The socks must have been worn while in a state of wudu. This ruling is confirmed by numerous authentic hadiths.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sahih Muslim 276", "Sunan Abu Dawud 149"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 11,
+    "category": "Taharat (Purification)",
+    "question": "Is blood from a small cut considered najis and does it break wudu?",
+    "answer": "In the Hanafi school, blood is najis (impure). If blood or pus flows from a wound (i.e., moves from its original place to a point that requires cleaning), wudu is broken. A small drop that does not flow does not break wudu. If the amount of blood on clothing is less than approximately 3 cm in diameter (the size of a dirham coin), salah is valid though disliked; more than this amount invalidates salah.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sunan Abu Dawud, Book of Purification"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Fatawa Alamgiri"
+  },
+  {
+    "id": 12,
+    "category": "Taharat (Purification)",
+    "question": "How many days does hayd (menstruation) last in Hanafi fiqh?",
+    "answer": "According to the Hanafi school, the minimum duration of hayd is 3 days and 3 nights (72 hours), and the maximum is 10 days and 10 nights. Any bleeding for less than 3 days is not hayd but istihadah (irregular/abnormal bleeding). If bleeding exceeds 10 days, the excess is also istihadah. A woman's habitual cycle (adah) is used to determine the normal period within these limits.",
+    "quran_refs": ["Al-Baqarah 2:222"],
+    "hadith_refs": ["Sunan Abu Dawud 287", "Sunan Tirmidhi 126"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 13,
+    "category": "Taharat (Purification)",
+    "question": "Can a menstruating woman read Quran?",
+    "answer": "According to the majority Hanafi position, a menstruating woman may not recite Quran verses with the intention of recitation (tilawah). However, she may read Quranic du'as with the intention of supplication, not recitation. She may also read Quran from memory without touching the mushaf for educational or teaching purposes according to some scholars. Dhikr (remembrance of Allah), salawat, and dua are fully permitted.",
+    "quran_refs": ["Al-Waqiah 56:79"],
+    "hadith_refs": ["Sunan Tirmidhi 131", "Sunan Ibn Majah 595"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Fatawa Alamgiri"
+  },
+  {
+    "id": 14,
+    "category": "Salah (Prayer)",
+    "question": "What are the five daily prayer times?",
+    "answer": "The five daily prayers and their times are: (1) Fajr — from true dawn (subh sadiq) until just before sunrise, (2) Zuhr — from when the sun passes its zenith until the shadow of an object equals its own length (plus the midday shadow), (3) Asr — from the end of Zuhr time until sunset (Hanafi: shadow equals twice the object's length), (4) Maghrib — from immediately after sunset until the red glow disappears from the horizon, (5) Isha — from the end of Maghrib time until dawn (subh sadiq).",
+    "quran_refs": ["Al-Isra 17:78", "Hud 11:114", "Al-Baqarah 2:238"],
+    "hadith_refs": ["Sahih Muslim 612", "Sunan Abu Dawud 393"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 15,
+    "category": "Salah (Prayer)",
+    "question": "What are the conditions (shurut) for salah to be valid?",
+    "answer": "The conditions for valid salah are: (1) Being Muslim, (2) Being sane and of age (or a child being taught), (3) Ritual purity (taharah) — wudu or ghusl, (4) Body free of najasah (impurity), (5) Clothing free of najasah, (6) Place of prayer free of najasah, (7) Facing the qiblah (direction of Ka'bah), (8) Proper covering of awrah — for men: navel to knee; for women: entire body except face, hands, and feet, (9) The prayer time must have entered, (10) Intention (niyyah).",
+    "quran_refs": ["Al-Maidah 5:6", "Al-Baqarah 2:144"],
+    "hadith_refs": ["Sahih Bukhari 391", "Sahih Muslim 224"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Nur al-Idah"
+  },
+  {
+    "id": 16,
+    "category": "Salah (Prayer)",
+    "question": "What are the arkaan (pillars/fard acts) of salah?",
+    "answer": "The Hanafi school identifies the following fard acts within salah: (1) Takbir al-Tahrimah (opening Allahu Akbar), (2) Qiyam — standing if able, (3) Qira'ah — recitation of Surah Al-Fatiha and an additional surah/verses in the first two rakats of fard salah, (4) Ruku — bowing, (5) Sajdah — prostration (twice per rakat), (6) Qa'dah al-Akhirah — final sitting for the duration of Tashahhud. If any fard is omitted, the prayer is invalid.",
+    "quran_refs": ["Al-Baqarah 2:238", "Al-Hajj 22:77"],
+    "hadith_refs": ["Sahih Bukhari 757", "Sahih Muslim 397"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Nur al-Idah"
+  },
+  {
+    "id": 17,
+    "category": "Salah (Prayer)",
+    "question": "What nullifies salah?",
+    "answer": "Salah is nullified by: (1) Speaking intentionally (even one word), (2) Laughing audibly, (3) Eating or drinking anything, (4) Excessive unnecessary movement (three or more steps or large movements), (5) Turning the chest away from qiblah intentionally, (6) Wudu breaking during salah, (7) Anything that breaks wudu, (8) Uncovering the awrah intentionally, (9) Making dua in words of worldly matters, (10) Reciting Quran in such a way that meaning changes erroneously.",
+    "quran_refs": ["Al-Baqarah 2:238"],
+    "hadith_refs": ["Sahih Bukhari 1216", "Sahih Muslim 537"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 18,
+    "category": "Salah (Prayer)",
+    "question": "Can I pray sitting if I am sick?",
+    "answer": "Yes. If one cannot stand due to illness, fear of falling, or severe pain, sitting prayer is permissible. The Quran itself grants this flexibility. If one cannot sit, lying down and indicating ruku and sujud with head movements is allowed. The sequence of dispensation is: standing → sitting → lying on the side → lying on the back with feet toward qiblah and gesturing. One should use the easiest valid posture that their health allows.",
+    "quran_refs": ["Al-Baqarah 2:286", "Al-Nisa 4:103"],
+    "hadith_refs": ["Sahih Bukhari 1117", "Sunan Abu Dawud 952"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 19,
+    "category": "Salah (Prayer)",
+    "question": "What is the ruling on Jumu'ah (Friday) prayer?",
+    "answer": "Jumu'ah prayer is fard 'ayn (individually obligatory) for every Muslim man who is: adult, sane, resident (not a traveler), free, and has no valid excuse (illness, fear). It replaces Zuhr on Fridays. Conditions include: it must be performed in a town/city, after two khutbahs (sermons) in Arabic, in congregation with a minimum number of people. Women, travelers, the sick, and children are not obligated but may attend.",
+    "quran_refs": ["Al-Jumu'ah 62:9-10"],
+    "hadith_refs": ["Sahih Bukhari 876", "Sahih Muslim 865"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 20,
+    "category": "Salah (Prayer)",
+    "question": "How many rakats are in each prayer?",
+    "answer": "Fajr: 2 sunnah + 2 fard. Zuhr: 4 sunnah mu'akkadah + 4 fard + 2 sunnah mu'akkadah + 2 nafl. Asr: 4 sunnah ghair mu'akkadah + 4 fard. Maghrib: 3 fard + 2 sunnah mu'akkadah + 2 nafl. Isha: 4 sunnah ghair mu'akkadah + 4 fard + 2 sunnah mu'akkadah + 2 nafl + 3 witr (wajib). Total fard per day: 17 rakats. Witr (3 rakats) is wajib in Hanafi fiqh.",
+    "quran_refs": ["Al-Baqarah 2:238"],
+    "hadith_refs": ["Sahih Bukhari 1180", "Sahih Muslim 730"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 21,
+    "category": "Salah (Prayer)",
+    "question": "What is qada salah and how should missed prayers be made up?",
+    "answer": "Qada is the making up of prayers missed without valid excuse or due to sleep/forgetfulness. It is obligatory to make up all missed prayers. There is no expiry — even years of missed prayers must be repaid. One should perform them in order if making up a few; if there are many missed prayers (a lifetime of qada), one may perform them without strict order. One is also permitted to estimate and make consistent daily effort to pay off the debt.",
+    "quran_refs": ["Al-Nisa 4:103"],
+    "hadith_refs": ["Sahih Bukhari 597", "Sahih Muslim 684"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Fatawa Alamgiri"
+  },
+  {
+    "id": 22,
+    "category": "Salah (Prayer)",
+    "question": "What is the ruling on witr prayer?",
+    "answer": "Witr prayer is wajib (obligatory, one level below fard) in the Hanafi school — this is unique to Hanafis. It consists of 3 rakats performed after Isha. In the third rakat, after reciting a surah, one raises hands and says Allahu Akbar, then recites Dua al-Qunoot before going into ruku. If witr is missed, it must be made up as qada. The Prophet (PBUH) said: 'Allah is Witr (odd) and loves witr, so perform witr, O people of the Quran.'",
+    "quran_refs": ["Al-Muzammil 73:2-4"],
+    "hadith_refs": ["Sunan Abu Dawud 1416", "Sunan Tirmidhi 453"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 23,
+    "category": "Salah (Prayer)",
+    "question": "Is it permissible to pray behind an imam of a different madhab?",
+    "answer": "Yes, it is generally permissible to pray behind an imam of a different madhab. The scholars of all four madhabs agree on this. However, in the Hanafi school, if the imam commits an act that invalidates prayer in the Hanafi school (e.g., does not recite Fatiha or touched a woman), some scholars say the muqtadi's prayer may be affected. The general principle is that prayer behind any Muslim imam leading correctly is valid.",
+    "quran_refs": ["Al-Baqarah 2:43"],
+    "hadith_refs": ["Sahih Bukhari, Book of Prayer"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Alamgiri / Contemporary Fatawa"
+  },
+  {
+    "id": 24,
+    "category": "Salah (Prayer)",
+    "question": "What is the ruling on praying with shoes on?",
+    "answer": "It is permissible to pray with shoes on if they are clean and free of impurity. The Prophet (PBUH) prayed with shoes and also removed them when Gabriel informed him they had impurity. However, it is the custom in most mosques to remove shoes, and one should follow the local custom to avoid discomfort to others. Praying barefoot in a clean place is perfectly valid.",
+    "quran_refs": ["Ta-Ha 20:12"],
+    "hadith_refs": ["Sunan Abu Dawud 650", "Sahih Bukhari, Book of Prayer"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 25,
+    "category": "Salah (Prayer)",
+    "question": "Wudu karne ka tareeqa kya hai? (What is the method of wudu?)",
+    "answer": "Wudu ka tareeqa: (1) Niyyat karen, (2) Bismillah padhein, (3) Donon haath kaai dafa dhoein, (4) Kullee karen (3 dafa), (5) Naak mein paani dalen aur saaf karen (3 dafa), (6) Poora chehra dhoein (3 dafa), (7) Dahna baazoo kohni samet dhoein (3 dafa), phir baaya (3 dafa), (8) Sirf ek baar masah karen — geeli ungliyon se sar ka chautha hissa phirein, (9) Kaan ka masah karen, (10) Dahna paon takhnon samet dhoein (3 dafa), phir baaya. Yeh Hanafi tareeqa hai.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sahih Bukhari 159", "Sahih Muslim 226"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 26,
+    "category": "Salah (Prayer)",
+    "question": "Can women lead prayer?",
+    "answer": "In the Hanafi school, women may lead prayer only for other women (female-only congregation). It is not permissible for a woman to be an imam for men. If a woman does lead women in prayer, she stands in the middle of the first row rather than in front. There is scholarly consensus (ijma) that a woman cannot lead a mixed-gender congregation.",
+    "quran_refs": ["Al-Ahzab 33:33"],
+    "hadith_refs": ["Sunan Abu Dawud 592", "Sunan Ibn Majah 1134"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Fatawa Alamgiri"
+  },
+  {
+    "id": 27,
+    "category": "Sawm (Fasting)",
+    "question": "What breaks the fast during Ramadan?",
+    "answer": "The following break the fast and require both qada (making it up) AND kaffarah (expiation — 60 consecutive fasts or feeding 60 poor people): intentional eating, drinking, or intercourse while fasting. The following break the fast and require only qada: eating/drinking by mistake forgetting one is fasting, forced eating/drinking, applying medicine via nose or ear, swallowing blood that exceeds saliva in the mouth, vomiting intentionally and a mouthful returning. Unintentional acts generally do not break the fast.",
+    "quran_refs": ["Al-Baqarah 2:183-187"],
+    "hadith_refs": ["Sahih Bukhari 1936", "Sahih Muslim 1111"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 28,
+    "category": "Sawm (Fasting)",
+    "question": "Who is exempt from fasting in Ramadan?",
+    "answer": "The following are exempt: (1) Traveler (musafir) — must make up later, (2) Sick person — makes up later when recovered, (3) Pregnant woman — if fasting harms her or the baby, makes up later, (4) Breastfeeding mother — if harmful, makes up later, (5) Elderly person unable to fast — pays fidya (feeding one poor person per missed day), (6) Menstruating woman — haram to fast, must make up later, (7) Post-natal bleeding — same as menstruation, (8) Severe compulsion — makes up later.",
+    "quran_refs": ["Al-Baqarah 2:184-185"],
+    "hadith_refs": ["Sahih Bukhari 1946", "Sunan Abu Dawud 2408"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 29,
+    "category": "Sawm (Fasting)",
+    "question": "Does using a toothbrush or toothpaste break the fast?",
+    "answer": "In the Hanafi school, using a dry toothbrush (miswak) is sunnah during fasting and does not break the fast. Using toothpaste is disliked (makruh) during a fast because there is a risk of it entering the throat. If toothpaste or its taste reaches the throat intentionally, it breaks the fast. It is better to use toothpaste before Fajr or after Iftar. The miswak is preferred for oral hygiene during fasting hours.",
+    "quran_refs": ["Al-Baqarah 2:183"],
+    "hadith_refs": ["Sahih Bukhari 1934", "Sunan Abu Dawud 2364"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Fatawa Alamgiri"
+  },
+  {
+    "id": 30,
+    "category": "Sawm (Fasting)",
+    "question": "Can I fast if I have an injection or IV drip?",
+    "answer": "According to the Hanafi school, an injection into muscle or vein does not break the fast because it does not enter through a natural body opening. Similarly, a blood transfusion or IV fluid does not break the fast in the Hanafi view. However, if nutrition enters the body through IV with the intention of replacing food, many contemporary scholars recommend precaution and making up the fast. A glucose drip that enters the stomach via a nasogastric tube would break the fast.",
+    "quran_refs": ["Al-Baqarah 2:185"],
+    "hadith_refs": ["Fatawa of Contemporary Scholars"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Alamgiri / Contemporary Fatawa"
+  },
+  {
+    "id": 31,
+    "category": "Sawm (Fasting)",
+    "question": "What is kaffarah for intentionally breaking a Ramadan fast?",
+    "answer": "The kaffarah (expiation) for deliberately breaking a Ramadan fast without valid excuse is: freeing a slave (not applicable today), OR fasting 60 consecutive days, OR feeding 60 poor people (each one meal that satisfies). In the Hanafi school, kaffarah is required only when the fast is broken by: eating, drinking, or sexual intercourse intentionally. Other breaks only require qada. The 60 consecutive days cannot be interrupted — if interrupted, one must start over.",
+    "quran_refs": ["Al-Mujadilah 58:3-4"],
+    "hadith_refs": ["Sahih Bukhari 1936", "Sahih Muslim 1111"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 32,
+    "category": "Sawm (Fasting)",
+    "question": "What is the ruling on suhoor (pre-dawn meal)?",
+    "answer": "Suhoor (the pre-dawn meal before fasting) is a confirmed sunnah (sunnah mu'akkadah). The Prophet (PBUH) said: 'Take suhoor, for there is blessing in suhoor.' Even drinking a sip of water with the intention of suhoor is sufficient. Suhoor ends at the beginning of Fajr (subh sadiq — true dawn). One must stop eating at the Fajr adhan if it is based on subh sadiq. It is recommended to delay suhoor close to Fajr time.",
+    "quran_refs": ["Al-Baqarah 2:187"],
+    "hadith_refs": ["Sahih Bukhari 1923", "Sahih Muslim 1095"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 33,
+    "category": "Sawm (Fasting)",
+    "question": "Can I use an inhaler while fasting?",
+    "answer": "Scholars differ on this. Many contemporary Hanafi scholars hold that using a medical inhaler breaks the fast because the medication enters the lungs (a body cavity) through a natural opening (mouth/nose). Therefore, they recommend making up the fast if used out of necessity. However, some scholars argue it does not break the fast as the amount is negligible. Given the medical necessity, a person using an inhaler should consult a Mufti and may need to make up those fasts.",
+    "quran_refs": ["Al-Baqarah 2:185"],
+    "hadith_refs": ["Contemporary Scholarly Opinions"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa — consult a local Mufti"
+  },
+  {
+    "id": 34,
+    "category": "Sawm (Fasting)",
+    "question": "Ramadan mein roza kya tor deta hai? (What breaks the fast in Ramadan?)",
+    "answer": "Roza in chezon se toot ta hai: (1) Jaan boojh kar khaana ya peena — qada aur kaffarah dono wajib, (2) Biwi se sambandh — qada aur kaffarah wajib, (3) Naswaari ya tobacco khaana/peena — qada aur kaffarah wajib, (4) Bhool kar khaana peena — roza nahi toota, Allah ki taraf se maafi, (5) Kaan ya naak mein dawai dalna — qada lazim, kaffarah nahi, (6) Qaay karna agar khud ki — qada lazim. Kaffarah: 60 roze lagaataar rakhna ya 60 miskeenon ko khaana khilaana.",
+    "quran_refs": ["Al-Baqarah 2:183-187"],
+    "hadith_refs": ["Sahih Bukhari 1936"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 35,
+    "category": "Sawm (Fasting)",
+    "question": "Is it permissible to fast voluntarily on Saturdays?",
+    "answer": "Fasting on Saturdays alone (singling it out) is disliked (makruh) according to some scholars because of a hadith prohibiting singling out Saturday for fasting. However, if Saturday falls in a series (like Mondays and Thursdays, or Ayyam al-Bid) or is combined with another fast (Friday + Saturday), it is fine. The Hanafi school generally permits voluntary fasting on any day except Eid al-Fitr, Eid al-Adha, and the 11th-13th of Dhul Hijjah for those performing Hajj.",
+    "quran_refs": [],
+    "hadith_refs": ["Sunan Abu Dawud 2421", "Sunan Ibn Majah 1726"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Alamgiri"
+  },
+  {
+    "id": 36,
+    "category": "Zakat",
+    "question": "Zakat ki nisab kitni hai? (What is the nisab for Zakat?)",
+    "answer": "Nisab is the minimum threshold of wealth above which Zakat becomes obligatory. It is: (1) Gold: 7.5 tola = 87.48 grams, (2) Silver: 52.5 tola = 612.36 grams. If one has savings equivalent to the value of 52.5 tola of silver for a full lunar year (hawl), Zakat is due at 2.5% of total zakatable wealth. The silver nisab is used as the benchmark today as it is more favorable to the poor. Zakatable assets include cash, gold, silver, business inventory, and receivables.",
+    "quran_refs": ["Al-Tawbah 9:60", "Al-Baqarah 2:177"],
+    "hadith_refs": ["Sunan Abu Dawud 1572", "Sunan Tirmidhi 626"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 37,
+    "category": "Zakat",
+    "question": "Who must pay Zakat?",
+    "answer": "Zakat is obligatory on every: (1) Muslim, (2) Adult (baligh), (3) Sane person, (4) Who possesses nisab (minimum threshold) of wealth, (5) For a complete lunar year (hawl), (6) The wealth must be in excess of basic needs and free of debt. Zakat is not required on debts owed to others (one may deduct debts from zakatable assets), household items, personal clothing, home of residence, vehicle for personal use, or tools of trade.",
+    "quran_refs": ["Al-Tawbah 9:103", "Al-Dhariyat 51:19"],
+    "hadith_refs": ["Sahih Bukhari 1395", "Sunan Abu Dawud 1572"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 38,
+    "category": "Zakat",
+    "question": "Who are the eligible recipients of Zakat?",
+    "answer": "Allah has specified eight categories of Zakat recipients in the Quran: (1) Al-Fuqara — the poor (no or minimal wealth), (2) Al-Masakin — the destitute (worse than fuqara), (3) Amil — Zakat collectors/administrators, (4) Mu'allaf al-Qulub — those whose hearts are to be reconciled (new Muslims), (5) Fi al-Riqab — freeing slaves (not applicable today), (6) Al-Gharimin — those overwhelmed by debt, (7) Fi Sabilillah — in the cause of Allah (scholars include students of Islamic knowledge), (8) Ibn al-Sabil — the stranded traveler. Zakat cannot be given to the wealthy, Banu Hashim (Prophet's family), or one's own dependents.",
+    "quran_refs": ["Al-Tawbah 9:60"],
+    "hadith_refs": ["Sahih Bukhari 1395", "Sunan Abu Dawud 1630"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 39,
+    "category": "Zakat",
+    "question": "Is Zakat payable on jewelry worn by women?",
+    "answer": "Yes, in the Hanafi school, Zakat is payable on gold and silver jewelry even if it is worn and used regularly. This is because gold and silver are inherently zakatable regardless of usage. So a woman who has gold jewelry worth the nisab amount (87.48g of gold) held for a full lunar year must pay 2.5% of its value as Zakat. Platinum, diamonds, and other precious stones are not zakatable unless they are business inventory.",
+    "quran_refs": ["Al-Tawbah 9:34-35"],
+    "hadith_refs": ["Sunan Abu Dawud 1563", "Sunan Nasai 2257"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 40,
+    "category": "Zakat",
+    "question": "Is Zakat due on a loan given to someone?",
+    "answer": "In the Hanafi school, a loan given to someone (receivable) is categorized: (1) Strong debt (qawi) — expected to be repaid promptly: Zakat is due annually but can be paid when received, (2) Weak debt (dha'if) — unlikely to be repaid, e.g., from a poor person: Zakat is due only for one year upon receipt. Practically, one may add receivable loans to their Zakat calculation and pay 2.5% if they expect repayment, or pay upon receipt if uncertain.",
+    "quran_refs": ["Al-Baqarah 2:280"],
+    "hadith_refs": ["Sunan Abu Dawud, Book of Zakat"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Fatawa Alamgiri"
+  },
+  {
+    "id": 41,
+    "category": "Zakat",
+    "question": "What is Zakat al-Fitr (Fitrana)?",
+    "answer": "Zakat al-Fitr (Sadaqah al-Fitr) is a charitable obligation due on every Muslim who possesses more than their basic needs on the day of Eid al-Fitr. It must be paid before the Eid prayer. Its amount: 1.6 kg of wheat (or its value in cash) per person in the household, including children and dependents. In the Hanafi school, the head of household pays on behalf of all dependents. The purpose is to purify the fasting person and provide for the poor on Eid day.",
+    "quran_refs": ["Al-A'la 87:14-15"],
+    "hadith_refs": ["Sahih Bukhari 1503", "Sahih Muslim 984"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 42,
+    "category": "Zakat",
+    "question": "Can I give Zakat to my brother or sister?",
+    "answer": "Yes, Zakat may be given to siblings, cousins, aunts, uncles — any eligible relative who is not your dependent. In fact, giving Zakat to eligible relatives is doubly rewarding: you fulfill the obligation of Zakat AND the duty of maintaining family ties (silah rahmi). However, Zakat cannot be given to: parents, grandparents, children, grandchildren, or a spouse — as these are dependents you are already obligated to support.",
+    "quran_refs": ["Al-Tawbah 9:60", "Al-Baqarah 2:177"],
+    "hadith_refs": ["Sunan Tirmidhi 658"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Fatawa Alamgiri"
+  },
+  {
+    "id": 43,
+    "category": "Zakat",
+    "question": "Is Zakat obligatory on a business? How is it calculated?",
+    "answer": "Yes, Zakat is obligatory on business inventory (mal al-tijarah). Calculate: (1) Add the current market value of all goods/inventory, (2) Add cash on hand and in bank accounts, (3) Add receivables (money owed to you), (4) Subtract debts and outstanding liabilities. If the net amount is above the nisab and one lunar year has passed since you first had nisab, pay 2.5% as Zakat. Fixed assets (machinery, buildings, vehicles) used in business are not zakatable — only trading stock and liquid assets.",
+    "quran_refs": ["Al-Baqarah 2:267"],
+    "hadith_refs": ["Sunan Abu Dawud 1562"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Contemporary Fatawa"
+  },
+  {
+    "id": 44,
+    "category": "Hajj & Umrah",
+    "question": "What are the conditions for Hajj to be obligatory?",
+    "answer": "Hajj becomes obligatory (fard) when the following conditions are met: (1) Islam — one must be Muslim, (2) Maturity (bulugh) — adult, (3) Sanity ('aql), (4) Freedom — not enslaved, (5) Financial ability — can afford travel, accommodation, and leave sufficient provision for dependents, (6) Physical ability — able to undertake the journey. For women, an additional condition in the Hanafi school is the presence of a mahram (husband or unmarriageable male relative) for the journey.",
+    "quran_refs": ["Al-Imran 3:97"],
+    "hadith_refs": ["Sahih Bukhari 1513", "Sahih Muslim 1337"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 45,
+    "category": "Hajj & Umrah",
+    "question": "What are the pillars (arkaan) of Hajj?",
+    "answer": "The pillars of Hajj (without which it is invalid) are: (1) Ihram — entering the state of ritual consecration, (2) Wuquf at Arafah — standing at the plain of Arafah on the 9th of Dhul Hijjah, (3) Tawaf al-Ziyarah (Ifadah) — circumambulating the Ka'bah after Arafah. In the Hanafi school, Sa'i (walking between Safa and Marwa) is wajib, not a pillar — its omission requires damm (sacrifice) but does not invalidate Hajj. Wuquf at Arafah is the most critical — missing it means missing Hajj entirely.",
+    "quran_refs": ["Al-Baqarah 2:197-198"],
+    "hadith_refs": ["Sahih Muslim 1218", "Sunan Abu Dawud 1949"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 46,
+    "category": "Hajj & Umrah",
+    "question": "What is ihram and what are its prohibitions?",
+    "answer": "Ihram is the state of ritual consecration entered by wearing the ihram garments (two unstitched white cloths for men; normal modest clothing for women) and making the niyyah (intention) for Hajj or Umrah. Prohibitions during ihram include: cutting hair or nails, using perfume or scented products, sexual intercourse or foreplay, hunting animals, covering the head (for men), wearing stitched clothing (for men), cutting plants in the Haram. Violations require kaffarah (damm or charity) depending on the act.",
+    "quran_refs": ["Al-Baqarah 2:197"],
+    "hadith_refs": ["Sahih Bukhari 1543", "Sahih Muslim 1177"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 47,
+    "category": "Hajj & Umrah",
+    "question": "What is the difference between Hajj and Umrah?",
+    "answer": "Hajj is the major pilgrimage performed specifically during Dhul Hijjah (8th-13th) and includes: Ihram, Wuquf at Arafah, Muzdalifah, Mina, Rami (stoning), sacrifice, Tawaf al-Ifadah, and Sa'i. It is obligatory once in a lifetime if conditions are met. Umrah is the minor pilgrimage that can be performed any time of year (Hanafi school: disliked during 9th-13th Dhul Hijjah). Umrah involves: Ihram, Tawaf al-Ka'bah, Sa'i, and Halq/Taqsir (shaving/trimming). Umrah is sunnah mu'akkadah.",
+    "quran_refs": ["Al-Baqarah 2:196-197", "Al-Imran 3:97"],
+    "hadith_refs": ["Sahih Bukhari 1773", "Sahih Muslim 1256"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 48,
+    "category": "Hajj & Umrah",
+    "question": "Can a woman perform Hajj without a mahram?",
+    "answer": "In the Hanafi school, a mahram (husband or permanently unmarriageable male relative) is a condition for a woman's Hajj, regardless of age or distance. Without a mahram, Hajj is not obligatory on her and she may not travel. This is based on the hadith: 'A woman should not travel except with a mahram.' Other madhabs (Shafi'i, Maliki) allow women above a certain age to travel with a trusted group of women. For ruling specific to one's situation, consult a qualified Mufti.",
+    "quran_refs": ["Al-Imran 3:97"],
+    "hadith_refs": ["Sahih Bukhari 1862", "Sahih Muslim 1338"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 49,
+    "category": "Hajj & Umrah",
+    "question": "What is Hajj Badal (proxy Hajj)?",
+    "answer": "Hajj Badal (performing Hajj on behalf of another) is permissible when: (1) The person on whose behalf it is performed was financially and physically unable to perform it themselves, (2) They have since passed away or are permanently unable (chronic illness), (3) They gave permission (or left a bequest). The person performing Hajj Badal must have already performed their own Hajj. The reward goes to the deceased/unable person. This is based on authentic hadith about performing Hajj on behalf of a parent.",
+    "quran_refs": ["Al-Imran 3:97"],
+    "hadith_refs": ["Sahih Bukhari 1852", "Sunan Abu Dawud 1809"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Fatawa Alamgiri"
+  },
+  {
+    "id": 50,
+    "category": "Nikah (Marriage)",
+    "question": "Nikah ke arkaan kya hain? (What are the pillars of Nikah?)",
+    "answer": "Nikah ke arkaan (fard ajza): (1) Ijab — ladki ki taraf se offer ya qubool, (2) Qabool — larke ki taraf se qubool, (3) Shuhood — kam az kam do mard ya ek mard do aurtein gawah hon, (4) Wali — Hanafi maslak mein aqil baligh aurat apna nikah khud kar sakti hai, lekin wali ki maujooodgi behtar hai. Nikah mein mehr tay karna zaruri hai. Mehr adaygi wajib hai. Nikah ka iftehan (elan) karna mustahab hai. Nikah sirf lafzon se hoti hai — koi aur act zaruri nahi.",
+    "quran_refs": ["Al-Nisa 4:4", "Al-Baqarah 2:235"],
+    "hadith_refs": ["Sahih Bukhari 5133", "Sunan Tirmidhi 1020"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 51,
+    "category": "Nikah (Marriage)",
+    "question": "What is mehr (mahr) and is it obligatory?",
+    "answer": "Mehr (mahr) is the obligatory gift/payment from the husband to the wife upon marriage. It is a right of the wife and must be paid. It can be: (1) Prompt (mu'ajjal) — paid at time of nikah, (2) Deferred (mu'ajjal) — paid at a later agreed time. The minimum mehr in the Hanafi school is 10 dirhams (approximately 30.618g of silver). If not specified in the nikah contract, mehr al-mithl (standard mehr based on similar women in her family) becomes due. Mehr cannot be waived without the wife's genuine and free consent.",
+    "quran_refs": ["Al-Nisa 4:4", "Al-Nisa 4:24"],
+    "hadith_refs": ["Sahih Bukhari 5149", "Sunan Abu Dawud 2125"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 52,
+    "category": "Nikah (Marriage)",
+    "question": "Who are mahram (unmarriageable) relatives?",
+    "answer": "Mahram relatives (permanently forbidden to marry) are: (1) Blood relations — mother, grandmother, daughter, granddaughter, sister, aunt (paternal/maternal), niece, (2) In-laws — mother-in-law, step-daughter (if mother's marriage was consummated), daughter-in-law, step-mother, (3) Milk relations (rada'ah) — all relations formed through breastfeeding mirror blood relations. Cousins are NOT mahram and may be married. Temporary prohibitions also include: sister-in-law during sister's marriage, fifth wife.",
+    "quran_refs": ["Al-Nisa 4:22-24"],
+    "hadith_refs": ["Sahih Bukhari 5099", "Sahih Muslim 1408"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 53,
+    "category": "Nikah (Marriage)",
+    "question": "What are the rights of a wife in Islam?",
+    "answer": "A wife's rights upon her husband include: (1) Mehr — obligatory gift, (2) Nafaqah — financial maintenance including food, clothing, and housing according to his means, (3) Kind and just treatment (mu'asharah bil-ma'ruf), (4) Equal treatment if polygamous, (5) Physical intimacy and companionship, (6) Not being harmed physically or emotionally, (7) Right to visit parents and maintain family ties, (8) Right to education and knowledge of deen, (9) Privacy and dignity. The Prophet (PBUH) said: 'The best of you is the one who is best to his wife.'",
+    "quran_refs": ["Al-Baqarah 2:228", "Al-Nisa 4:19", "Al-Tawbah 4:34"],
+    "hadith_refs": ["Sunan Tirmidhi 1162", "Sunan Ibn Majah 1977"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 54,
+    "category": "Nikah (Marriage)",
+    "question": "What is talaq (divorce) and how is it pronounced?",
+    "answer": "Talaq is the dissolution of marriage by the husband. Types: (1) Talaq Raj'i — revocable divorce; the husband may take back the wife before the completion of iddah (waiting period) without a new nikah, (2) Talaq Ba'in — irrevocable; a new nikah is required to reunite, (3) Talaq Mughallazah (triple talaq) — final, no reunion possible unless the wife marries and is divorced by another man (halala, which must occur naturally). The Hanafi school holds that three talaqs in one sitting count as three. One revocable talaq followed by iddah is the Sunnah method.",
+    "quran_refs": ["Al-Baqarah 2:229-232", "Al-Talaq 65:1-2"],
+    "hadith_refs": ["Sahih Bukhari 5253", "Sunan Abu Dawud 2196"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 55,
+    "category": "Nikah (Marriage)",
+    "question": "What is the iddah period and why is it required?",
+    "answer": "Iddah is the waiting period a woman must observe after divorce or the death of her husband before she can remarry. For divorce: (1) If she has periods — 3 complete menstrual cycles (Hanafi: 3 full quru), (2) If she does not have periods (elderly/pre-pubescent) — 3 lunar months, (3) If pregnant — until delivery. For widowhood: 4 months and 10 days (or until delivery if pregnant). Purpose: confirm she is not pregnant, honor the marriage, and allow possibility of reconciliation. During iddah she remains in the marital home.",
+    "quran_refs": ["Al-Baqarah 2:228", "Al-Baqarah 2:234", "Al-Talaq 65:1-4"],
+    "hadith_refs": ["Sahih Bukhari 5321", "Sunan Abu Dawud 2280"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 56,
+    "category": "Nikah (Marriage)",
+    "question": "Is nikah valid without a wali (guardian)?",
+    "answer": "In the Hanafi school, a mature (baligh) and sane woman can validly contract her own nikah without a wali's permission, though this is strongly discouraged. The nikah is valid but highly disliked if done without the wali's consent. However, the judge may dissolve it if the husband is not of suitable status (kufw). This differs from the Shafi'i and Maliki view where a wali is a pillar (condition for validity). Most scholars and families follow the principle of involving the wali for blessing and social harmony.",
+    "quran_refs": ["Al-Baqarah 2:232"],
+    "hadith_refs": ["Sunan Abu Dawud 2083", "Sunan Tirmidhi 1102"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Fatawa Alamgiri"
+  },
+  {
+    "id": 57,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is seafood halal in Hanafi fiqh?",
+    "answer": "In the Hanafi school, only fish (samak) are halal from sea creatures — defined as fish with scales. Other sea creatures (shrimp, lobster, crab, octopus, squid) are haram or makruh (disliked) because only fish are considered to die naturally in water (making them halal without slaughter). This is a stricter position than the Shafi'i and Maliki schools, which generally permit all sea creatures. The Hanafi position is based on the principle that the sea is like land — only what is normally edible is halal.",
+    "quran_refs": ["Al-Maidah 5:96", "Al-Nahl 16:14"],
+    "hadith_refs": ["Sunan Ibn Majah 3218", "Sunan Abu Dawud 3839"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 58,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is it halal to eat meat slaughtered by Christians or Jews (Ahl al-Kitab)?",
+    "answer": "The Quran permits eating the food (including meat) of the People of the Book (Jews and Christians) if it meets Islamic conditions. However, a condition is that the animal must have been slaughtered with the name of Allah (or at least not with the name of an idol). In contemporary contexts, machine-slaughtered meat in Western countries requires scholarly analysis. Many Hanafi scholars require hand-slaughter with Bismillah for chicken specifically. Beef and lamb from Ahl al-Kitab slaughterhouses is more debated. Consult a local Mufti for your specific country's situation.",
+    "quran_refs": ["Al-Maidah 5:5", "Al-An'am 6:121"],
+    "hadith_refs": ["Sahih Bukhari 5507"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Alamgiri / Contemporary Fatawa"
+  },
+  {
+    "id": 59,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the Islamic ruling on keeping a dog as a pet?",
+    "answer": "Keeping a dog as a pet inside the home is not permitted in Islam. The Prophet (PBUH) said that angels do not enter a house in which there is a dog. Keeping dogs for permissible purposes is allowed: (1) Guarding property/livestock (outside the home), (2) Hunting (trained hunting dogs), (3) Farming/herding. The saliva of a dog is considered najis (impure). If it licks a utensil, it must be washed seven times, one of which should be with earth/clay.",
+    "quran_refs": ["Al-Maidah 5:4"],
+    "hadith_refs": ["Sahih Bukhari 3225", "Sahih Muslim 1574"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Alamgiri / Bahishti Zewar"
+  },
+  {
+    "id": 60,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is interest (riba) completely forbidden?",
+    "answer": "Yes, riba (interest/usury) is absolutely haram in Islam with no exceptions. Allah declares war on those who deal in riba. This includes: bank interest earned or paid, loans with interest, credit card interest, and any transaction where money grows simply by lending. The prohibition covers all amounts — even a small amount of interest is forbidden. Permissible alternatives include: Islamic banking products (musharakah, murabahah, ijarah), profit-sharing arrangements, and halal investment instruments.",
+    "quran_refs": ["Al-Baqarah 2:275-279", "Al-Imran 3:130", "Al-Nisa 4:161"],
+    "hadith_refs": ["Sahih Muslim 1598", "Sahih Bukhari 2086"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 61,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on music and musical instruments?",
+    "answer": "The majority of classical scholars, including in the Hanafi school, hold that music with instruments (especially wind and string instruments) is haram. The Quran refers to 'lahwal hadith' (idle speech) which scholars interpret to include music that distracts from Allah. A hadith warns of people who will make musical instruments lawful. However, duff (hand drum) is permitted at weddings and celebrations according to many scholars. There is some contemporary scholarly disagreement on music without profane content. The cautious position is avoidance.",
+    "quran_refs": ["Luqman 31:6", "Al-Isra 17:64"],
+    "hadith_refs": ["Sahih Bukhari 5590", "Sunan Abu Dawud 3685"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Alamgiri / Bahishti Zewar"
+  },
+  {
+    "id": 62,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is it permissible to take out a mortgage to buy a home?",
+    "answer": "A conventional interest-based mortgage is haram because it involves riba. One should seek halal alternatives: (1) Islamic mortgage products (diminishing musharakah — available in some countries), (2) Saving and buying outright, (3) Rent-to-own schemes that avoid interest. However, scholars differ on the permissibility when there is genuine need (darura) and no halal alternative available. The majority maintain it remains prohibited regardless of need for housing. Consult a qualified Mufti about specific Islamic finance products available in your country.",
+    "quran_refs": ["Al-Baqarah 2:275"],
+    "hadith_refs": ["Sahih Muslim 1598"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa — consult a local Mufti"
+  },
+  {
+    "id": 63,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on wearing gold for men?",
+    "answer": "It is haram for men to wear gold jewelry. The Prophet (PBUH) took a piece of gold in one hand and silk in the other, saying: 'These two are haram for the males of my ummah.' This applies to gold rings, chains, bracelets, and watches with gold. Silver rings are permissible for men — the Prophet himself wore a silver ring. White gold is silver-colored but contains gold, and most scholars hold it haram for men. Platinum is permissible for men.",
+    "quran_refs": [],
+    "hadith_refs": ["Sunan Abu Dawud 4057", "Sunan Nasai 5144", "Sahih Muslim 2090"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Alamgiri / Bahishti Zewar"
+  },
+  {
+    "id": 64,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the Islamic greeting and its etiquette?",
+    "answer": "The Islamic greeting is 'Assalamu Alaykum wa Rahmatullahi wa Barakatuh' (Peace, Mercy and Blessings of Allah be upon you). The full response is 'Wa Alaykum Assalam wa Rahmatullahi wa Barakatuh.' Etiquette: (1) The one arriving greets first, (2) Younger greets older, (3) Rider greets those walking, (4) Smaller group greets larger, (5) One should greet even strangers, (6) Greeting is sunnah, replying is wajib. It is not appropriate to abbreviate as 'AOA' in conversation as the full greeting carries blessing. Non-Muslims are not greeted with the Islamic salaam.",
+    "quran_refs": ["Al-Nisa 4:86", "Al-Nur 24:61"],
+    "hadith_refs": ["Sahih Bukhari 6234", "Sahih Muslim 2160"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 65,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is it permissible to eat at a restaurant that serves alcohol?",
+    "answer": "Scholars differ on this. The Hanafi position: it is disliked (makruh) to eat at a restaurant that openly serves alcohol, as it involves frequenting a place of sin. However, the food itself is halal if the ingredients are permissible. If there is genuine need (no other option, traveling), one may eat halal food there without partaking in or assisting the haram. One should not sit at a table where alcohol is being consumed. The better practice is to avoid such establishments when alternatives exist.",
+    "quran_refs": ["Al-Maidah 5:2", "Al-Maidah 5:90-91"],
+    "hadith_refs": ["Sunan Abu Dawud 3777"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa"
+  },
+  {
+    "id": 66,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on Isbal — men wearing clothes below the ankle?",
+    "answer": "Wearing clothing below the ankles out of arrogance is haram. The Prophet (PBUH) said: 'Whatever of the lower garment hangs below the ankles is in the hellfire.' If done without arrogance, it is disliked (makruh tanzihiyyan) according to many scholars. The ruling applies specifically to the izaar (lower garment). Pants worn without any intention of pride that fall slightly below the ankle are disliked but not haram according to some contemporary scholars. The sunnah is to keep the garment mid-calf.",
+    "quran_refs": [],
+    "hadith_refs": ["Sahih Bukhari 5787", "Sahih Muslim 2085"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Fatawa Alamgiri"
+  },
+  {
+    "id": 67,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is it permissible to read or take out insurance?",
+    "answer": "Conventional insurance involves elements of gharar (uncertainty), maysir (gambling), and sometimes riba, making it problematic. Scholars differ: (1) Many Hanafi scholars consider conventional insurance haram, (2) Some permit it for necessity (e.g., car insurance required by law), (3) Takaful (Islamic insurance — a mutual cooperative scheme) is the halal alternative. Health insurance for employment benefits is debated — some permit it as it is a workplace benefit not sought individually. Consult a Mufti for your specific type of insurance.",
+    "quran_refs": ["Al-Maidah 5:90"],
+    "hadith_refs": ["Sunan Abu Dawud 3503"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa — consult a local Mufti"
+  },
+  {
+    "id": 68,
+    "category": "Taharat (Purification)",
+    "question": "What is the ruling on using alcohol-based hand sanitizer?",
+    "answer": "Alcohol derived from grapes or dates is najis (impure) in the Hanafi school. However, synthetic alcohol (isopropyl, ethanol derived from non-grape/date sources) is debated — many Hanafi scholars consider it tahir (pure) though haram to consume. Hand sanitizer using non-grape-derived alcohol can be used for external cleanliness purposes (it evaporates and does not remain as impurity on the skin). Salah is valid if performed after using such sanitizer. For consumption: all alcohol is haram.",
+    "quran_refs": ["Al-Maidah 5:90"],
+    "hadith_refs": ["Fatawa of Contemporary Scholars"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa"
+  },
+  {
+    "id": 69,
+    "category": "Salah (Prayer)",
+    "question": "Is it permissible to pray with a sutrah (barrier)?",
+    "answer": "Using a sutrah (a barrier placed in front during prayer) is sunnah for the imam and one praying alone, to prevent people from passing in front. The minimum sutrah is approximately 30 cm in height. It is sunnah to place it slightly to the right. Passing in front of a person in prayer without a sutrah is a serious sin according to hadith. If there is no sutrah and someone passes, the prayer is not invalidated but is deficient. One praying behind an imam uses the imam as their sutrah.",
+    "quran_refs": [],
+    "hadith_refs": ["Sahih Bukhari 498", "Sahih Muslim 511"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 70,
+    "category": "Salah (Prayer)",
+    "question": "What is the ruling on praying in congregation (jama'ah)?",
+    "answer": "Praying in congregation (jama'ah) is wajib (obligatory) for men for the five daily prayers according to the strongest Hanafi opinion, though some say it is sunnah mu'akkadah. The reward of jama'ah prayer is 27 times greater than praying alone. Valid excuses for missing jama'ah: severe illness, extreme weather, fear, caring for the sick. Women may pray in congregation at home or mosque — both are valid. The minimum for jama'ah is two people (imam + one follower).",
+    "quran_refs": ["Al-Baqarah 2:43", "Al-Nisa 4:102"],
+    "hadith_refs": ["Sahih Bukhari 645", "Sahih Muslim 650"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 71,
+    "category": "Sawm (Fasting)",
+    "question": "Is it permissible to fast on Ashura (10th Muharram)?",
+    "answer": "Fasting on Ashura (10th Muharram) is sunnah mu'akkadah. The Prophet (PBUH) fasted on this day and said it expiates sins of the previous year. It is also recommended to fast on the 9th of Muharram (Tasu'a) along with the 10th to differ from the Jews. Fasting only the 10th is valid but fasting 9th + 10th or 10th + 11th is more complete. The Ashura fast was a confirmed practice even before Ramadan fasting was made obligatory.",
+    "quran_refs": [],
+    "hadith_refs": ["Sahih Muslim 1162", "Sahih Bukhari 2006"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 72,
+    "category": "Zakat",
+    "question": "How is Zakat calculated on savings in a bank account?",
+    "answer": "Zakat is payable on savings in a bank account (the total balance is zakatable). Calculate: (1) Note your total bank balance on your Zakat date (lunar anniversary), (2) Add any cash on hand, gold, silver, and business inventory, (3) Subtract debts and outstanding bills, (4) If the net amount is above nisab (value of 52.5 tola silver), pay 2.5% as Zakat. Interest (riba) earned from the bank account is not yours — do not add it to Zakat calculation; dispose of it in charity without expecting reward.",
+    "quran_refs": ["Al-Tawbah 9:103"],
+    "hadith_refs": ["Sunan Abu Dawud 1572"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa / Bahishti Zewar"
+  },
+  {
+    "id": 73,
+    "category": "Nikah (Marriage)",
+    "question": "Is it permissible for a Muslim man to marry a non-Muslim woman?",
+    "answer": "A Muslim man is permitted by the Quran to marry a chaste woman from the People of the Book (Christian or Jewish). This is considered halal. However, scholars strongly advise against it in non-Muslim countries due to risks to children's Islamic upbringing and household harmony. A Muslim woman, however, cannot marry a non-Muslim man (of any religion) — there is scholarly consensus on this prohibition. In today's context, many scholars advise Muslim men to also marry Muslim women for preservation of the family's Islamic identity.",
+    "quran_refs": ["Al-Maidah 5:5", "Al-Baqarah 2:221"],
+    "hadith_refs": ["Sahih Bukhari, Book of Nikah"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Contemporary Fatawa"
+  },
+  {
+    "id": 74,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on cryptocurrency and Bitcoin?",
+    "answer": "Cryptocurrency (Bitcoin, Ethereum, etc.) is a contemporary issue with scholarly disagreement. Arguments for permissibility: it has real-world utility and value assigned by the market, similar to fiat currency. Arguments against: extreme speculation resembles maysir (gambling), no intrinsic backing, used for illegal activity. Currently, many Hanafi scholars are cautious or consider it impermissible for trading due to gharar (uncertainty) and maysir elements. Blockchain technology itself is not haram. This is a rapidly evolving area — consult a contemporary Mufti for the latest ruling.",
+    "quran_refs": ["Al-Baqarah 2:188"],
+    "hadith_refs": ["Sunan Abu Dawud 3503"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa — consult a local Mufti"
+  },
+  {
+    "id": 75,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is gelatin halal or haram?",
+    "answer": "Gelatin's permissibility depends on its source: (1) Pig-derived gelatin: haram, (2) Gelatin from non-halal slaughtered animals (most commercial gelatin): haram in Hanafi opinion, (3) Halal-certified gelatin (from halal-slaughtered animals or fish): halal, (4) Synthetic/plant-based gelatin (agar-agar, carrageenan): halal. Some contemporary scholars argue that gelatin undergoes such chemical transformation (istihalah) that it becomes a new substance and is halal. The Hanafi mainstream does not fully accept istihalah for pig-derived products. Look for halal-certified alternatives.",
+    "quran_refs": ["Al-Baqarah 2:173", "Al-Maidah 5:3"],
+    "hadith_refs": ["Sahih Bukhari 2121"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa"
+  },
+  {
+    "id": 76,
+    "category": "Taharat (Purification)",
+    "question": "Does vomiting break wudu?",
+    "answer": "In the Hanafi school, vomiting a full mouthful (or multiple partial mouthfuls together equaling a full mouthful) breaks wudu. A lesser amount does not break wudu. 'A full mouthful' is defined as an amount that cannot be held in the mouth without difficulty. Bile, blood, or food vomited in this quantity all break wudu. This ruling is based on the Hanafi principle that anything exiting the body in significant quantity from the stomach breaks wudu.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sunan Abu Dawud 2381", "Sunan Tirmidhi 87"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 77,
+    "category": "Salah (Prayer)",
+    "question": "What is the ruling on the Eid prayer?",
+    "answer": "Eid prayer (Salat al-Eid) is wajib (obligatory) according to the Hanafi school — more than sunnah but less than fard. It consists of 2 rakats with six extra takbeers (three before Surah Fatiha in the first rakat, three after Surah Fatiha in the second rakat before ruku). It is performed after sunrise and before Zuhr time. The two Eid prayers are: Eid al-Fitr (1st Shawwal) and Eid al-Adha (10th Dhul Hijjah). No adhan or iqamah is called for Eid prayer. Two khutbahs follow the prayer.",
+    "quran_refs": ["Al-Kawthar 108:2"],
+    "hadith_refs": ["Sahih Bukhari 956", "Sahih Muslim 889"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 78,
+    "category": "Salah (Prayer)",
+    "question": "Can I perform Fajr prayer after sunrise if I missed it?",
+    "answer": "If Fajr prayer is missed (due to sleep or forgetting), it becomes qada (missed prayer) after sunrise. It must be made up as soon as one wakes or remembers. Make up Fajr qada before performing Zuhr if there is time. There is no specific time limit for making up missed prayers — they must be performed whenever possible. If Fajr time ends and Zuhr time begins without it being prayed, one should pray Fajr qada before Zuhr. Missing salah without valid excuse is a major sin requiring sincere repentance.",
+    "quran_refs": ["Al-Nisa 4:103"],
+    "hadith_refs": ["Sahih Bukhari 597", "Sahih Muslim 684"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 79,
+    "category": "Hajj & Umrah",
+    "question": "What is the significance of Tawaf and how many rounds are required?",
+    "answer": "Tawaf is the circumambulation of the Ka'bah and is among the greatest acts of worship. It consists of 7 rounds (shawt), each starting and ending at the Black Stone (Hajar al-Aswad). The Ka'bah is kept on the left side throughout. After completing 7 rounds, two rakats of prayer are performed behind Maqam Ibrahim if possible. Types of Tawaf: (1) Tawaf al-Qudum (arrival), (2) Tawaf al-Ifadah (pillar of Hajj), (3) Tawaf al-Wada (farewell, wajib). One should be in a state of wudu and have the awrah covered for all tawaf.",
+    "quran_refs": ["Al-Hajj 22:26-29", "Al-Baqarah 2:125"],
+    "hadith_refs": ["Sahih Bukhari 1647", "Sahih Muslim 1270"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 80,
+    "category": "Zakat",
+    "question": "Is Zakat due on provident fund or pension savings?",
+    "answer": "Zakat on provident funds/pensions depends on access: (1) If the funds are accessible (can be withdrawn), Zakat is due annually on the full amount above nisab, (2) If funds are locked and inaccessible (mandatory pension), most scholars say Zakat is due only when received — and then only for one year (not all past years). EPF/EOBI type funds where the employee has no control — scholars recommend paying Zakat when the amount is received, at 2.5% of the full amount for that year only.",
+    "quran_refs": ["Al-Tawbah 9:103"],
+    "hadith_refs": ["Contemporary Scholarly Opinions"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa"
+  },
+  {
+    "id": 81,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on celebrating birthdays?",
+    "answer": "Celebrating birthdays is not an established Islamic tradition and was not practiced by the Prophet (PBUH) or companions. Many scholars consider it a bid'ah (innovation) or imitation of non-Muslim customs (tashabbuh bil-kuffar). However, if the celebration is simple (family gathering, no haram elements, no cake with candles as religious ritual), some contemporary scholars say it is permissible as a cultural practice not a religious innovation. The celebration should not involve: wasteful spending, music, free mixing, or religious connotations. Strict scholars avoid it entirely.",
+    "quran_refs": [],
+    "hadith_refs": ["Sunan Abu Dawud 4031"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa — scholars differ"
+  },
+  {
+    "id": 82,
+    "category": "Daily Life & Halal/Haram",
+    "question": "Is it permissible to draw pictures of humans and animals?",
+    "answer": "Drawing or creating images (tasweer) of living beings (humans, animals) with complete features is haram according to the majority of classical scholars including Hanafis. The hadith states that image-makers will be among those most severely punished on Qiyamah and will be asked to give life to what they created. This applies to 3D sculptures most strictly, then 2D paintings, then photography (some contemporary scholars differentiate photography as it captures light, not 'creating' an image). Cartoon-style images of complete beings remain problematic. Non-living beings (landscapes, plants) are permissible.",
+    "quran_refs": [],
+    "hadith_refs": ["Sahih Bukhari 5950", "Sahih Muslim 2107"],
+    "madhab": "Hanafi",
+    "source": "Fatawa Alamgiri / Bahishti Zewar"
+  },
+  {
+    "id": 83,
+    "category": "Nikah (Marriage)",
+    "question": "What is the ruling on having a wedding (walimah)?",
+    "answer": "Walimah (wedding feast) after nikah is sunnah mu'akkadah — a confirmed sunnah of the Prophet (PBUH). It should be held within three days of the nikah/consummation. The minimum is to invite at least one person and provide any food. The more people invited the better. Attending the walimah is wajib for those invited unless there is a valid excuse. Conditions: no haram acts (free mixing, music, etc.), no extravagance beyond means, and it should not be exclusively for the wealthy.",
+    "quran_refs": [],
+    "hadith_refs": ["Sahih Bukhari 5155", "Sahih Muslim 1427"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 84,
+    "category": "Salah (Prayer)",
+    "question": "How should one perform Sajdah al-Sahw (prostration of forgetfulness)?",
+    "answer": "Sajdah al-Sahw (two prostrations for forgetfulness) becomes wajib when one: omits a wajib act of salah (like tashahhud or qunoot), adds or omits a wajib element, or doubts the number of rakats and acts on the lesser number. Method (Hanafi): (1) After the final tashahhud (qa'dah akhirah), give one salam to the right only, (2) Perform two extra sajdahs, (3) Return to sitting position, recite full tashahhud + durud + dua, then (4) Give salam on both sides. This compensates for the deficiency.",
+    "quran_refs": [],
+    "hadith_refs": ["Sahih Bukhari 1224", "Sahih Muslim 572"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 85,
+    "category": "Sawm (Fasting)",
+    "question": "Can I fast if I am traveling (musafir)?",
+    "answer": "A traveler (musafir — one traveling more than approximately 77 km / 48 miles) is permitted to break the fast and make it up later. It is not haram to fast while traveling. If fasting while traveling causes hardship, it is better to break the fast. If it does not cause hardship, fasting is also acceptable. The Prophet (PBUH) sometimes fasted while traveling and sometimes broke fast — both are valid. The qada (making up) of missed fasts remains obligatory after returning.",
+    "quran_refs": ["Al-Baqarah 2:184-185"],
+    "hadith_refs": ["Sahih Bukhari 1943", "Sahih Muslim 1116"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Hidayah"
+  },
+  {
+    "id": 86,
+    "category": "Taharat (Purification)",
+    "question": "Is it permissible to use someone else's well or river water for wudu?",
+    "answer": "Water from rivers, streams, and public wells is mubah (freely available) for everyone — wudu and ghusl with it is valid without permission. Private wells require the owner's permission, though if it is customarily shared (like a neighborhood well), implicit permission is assumed. Rainwater, sea water, river water, spring water, and well water are all pure (tahir/mutahhir) and valid for purification. The Hanafi school defines pure water broadly — any water that retains its natural qualities of color, taste, and smell.",
+    "quran_refs": ["Al-Maidah 5:6", "Al-Furqan 25:48"],
+    "hadith_refs": ["Sunan Abu Dawud 83", "Sunan Tirmidhi 66"],
+    "madhab": "Hanafi",
+    "source": "Hidayah"
+  },
+  {
+    "id": 87,
+    "category": "Salah (Prayer)",
+    "question": "What is Tarawih prayer and how many rakats is it?",
+    "answer": "Tarawih is the special night prayer performed during Ramadan after Isha. It is sunnah mu'akkadah for both men and women. The Hanafi school holds that 20 rakats of Tarawih is the sunnah, established by the practice of Umar ibn al-Khattab (RA) and the companions who agreed upon it. The prayer is performed in sets of 2 rakats with brief rest periods between every 4 rakats. Eight rakats is the practice of some (based on night prayer hadith) but 20 is the Hanafi/established practice. It may be performed at home or in congregation at the mosque.",
+    "quran_refs": ["Al-Isra 17:79"],
+    "hadith_refs": ["Sahih Bukhari 2010", "Muwatta Malik 252"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 88,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on consuming energy drinks?",
+    "answer": "Energy drinks are generally permissible if they do not contain haram ingredients (alcohol, non-halal animal derivatives). Common energy drinks contain caffeine, taurine (synthetic or fish-derived), B-vitamins, and sugar — these are generally halal. Check the label for: (1) Alcohol content — even trace alcohol from fermentation may be present, (2) Taurine source — synthetically produced taurine is halal, (3) L-carnitine — if from animal source, verify it is halal-certified. Excessive consumption is disliked from a health perspective. Read labels and choose halal-certified products when possible.",
+    "quran_refs": ["Al-Baqarah 2:168"],
+    "hadith_refs": ["Sahih Bukhari, Book of Food"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa"
+  },
+  {
+    "id": 89,
+    "category": "Hajj & Umrah",
+    "question": "What is the ruling on qurbani (udhiyah/sacrifice) on Eid al-Adha?",
+    "answer": "Qurbani (animal sacrifice) on Eid al-Adha is wajib (obligatory) in the Hanafi school for every: Muslim, adult, sane, resident (non-traveler), who possesses nisab (same as Zakat nisab — 52.5 tola silver worth). Time: from the Eid prayer on 10th Dhul Hijjah until sunset of 12th Dhul Hijjah (3 days). Animals: camel (7 shares), cow/buffalo (7 shares), goat/sheep (1 share). Conditions: animal must be of appropriate age, free of major defects. One-seventh of a cow/camel counts as one complete sacrifice.",
+    "quran_refs": ["Al-Kawthar 108:2", "Al-Hajj 22:34-36"],
+    "hadith_refs": ["Sahih Bukhari 5546", "Sahih Muslim 1966"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 90,
+    "category": "Nikah (Marriage)",
+    "question": "Is it permissible to get divorced without a court order in an Islamic marriage?",
+    "answer": "In Islamic fiqh, divorce (talaq) takes effect through the husband's pronouncement — no court order is required for the Islamic divorce to be valid. The husband says 'I give you talaq' or similar words, and it takes effect immediately. However, in modern Muslim countries, civil registration of divorce is legally required and strongly advised. If a man gives verbal talaq without registering, the Islamic divorce is valid but the civil marriage may continue legally, creating complications. Women should seek registration of both nikah and talaq to protect their legal rights.",
+    "quran_refs": ["Al-Baqarah 2:229", "Al-Talaq 65:1"],
+    "hadith_refs": ["Sahih Bukhari 5253"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Contemporary Fatawa"
+  },
+  {
+    "id": 91,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the Islamic ruling on organ donation?",
+    "answer": "Organ donation is a contemporary fiqh issue with significant scholarly disagreement. Arguments for permissibility: saving lives is a paramount goal of Sharia, necessity (darura) permits otherwise impermissible acts. Arguments against: sanctity of the human body (hurmat al-insan) prohibits mutilation after death, and uncertainty about brain death. Many contemporary Hanafi scholars and fiqh councils permit living donation (kidney to relative) and conditional posthumous donation (with prior consent and declaration). This is an area requiring consultation with a qualified contemporary Mufti.",
+    "quran_refs": ["Al-Maidah 5:32"],
+    "hadith_refs": ["Contemporary Scholarly Opinions"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa — consult a local Mufti"
+  },
+  {
+    "id": 92,
+    "category": "Taharat (Purification)",
+    "question": "How is a deceased Muslim washed (ghusl al-mayyit)?",
+    "answer": "Ghusl al-mayyit (washing the deceased) is fard kifayah (communal obligation — if some do it, others are absolved). Method: (1) Place body on a raised surface, cover private parts, (2) Remove clothing gently, (3) Perform istinja (clean private parts), (4) Make wudu (without blowing into nose/mouth — just wipe), (5) Wash the body three times: first with water + lotus leaves (or soap), second with water + camphor, third with plain water. A Muslim male is washed by males; female by females (except spouses). Martyrs are not washed.",
+    "quran_refs": ["Al-Maidah 5:6"],
+    "hadith_refs": ["Sahih Bukhari 1254", "Sahih Muslim 939"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 93,
+    "category": "Salah (Prayer)",
+    "question": "What is the ruling on praying in a moving vehicle, train, or airplane?",
+    "answer": "Fard prayer must be performed at its proper time even while traveling. In a vehicle: (1) If possible, stop and pray properly facing qiblah, (2) If stopping is impossible (flight, ship), pray as best as possible — standing if safe, sitting if not. Face qiblah for takbir then maintain as close as possible. (3) On an airplane, it is preferred to stand and pray properly in the aisle if safe, but sitting in the seat with gestures is valid if standing is not possible. Missing fard prayer due to travel without genuine impossibility is sinful.",
+    "quran_refs": ["Al-Baqarah 2:239", "Al-Nisa 4:103"],
+    "hadith_refs": ["Sahih Bukhari 1098", "Sahih Muslim 700"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Contemporary Fatawa"
+  },
+  {
+    "id": 94,
+    "category": "Sawm (Fasting)",
+    "question": "What is I'tikaf and what are its conditions?",
+    "answer": "I'tikaf is seclusion in the mosque for worship. Its types: (1) Wajib — vowed i'tikaf must be fulfilled, (2) Sunnah mu'akkadah — the last 10 days of Ramadan (communal obligation — if some do it, all are absolved), (3) Nafl — any time. Conditions: Muslim, sane, in a state of purity (ghusl from janabah), niyyah, staying in the mosque. During i'tikaf: one may not leave except for necessities (toilet, wudu). The person in i'tikaf should spend time in prayer, Quran recitation, dhikr, and seeking knowledge.",
+    "quran_refs": ["Al-Baqarah 2:187"],
+    "hadith_refs": ["Sahih Bukhari 2026", "Sahih Muslim 1167"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 95,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on wearing a hijab?",
+    "answer": "Hijab (covering the awrah) is fard (obligatory) for every Muslim woman who has reached puberty. The awrah of a woman in front of non-mahram men is her entire body except the face, hands (and according to some, feet). This includes: covering the hair, neck, chest, and entire body with loose, opaque clothing. The face veil (niqab) is wajib according to some Hanafi scholars (particularly the Deobandi school) and mustahab (recommended) according to others. The obligation of hijab is established by explicit Quranic verses and hadith.",
+    "quran_refs": ["Al-Nur 24:31", "Al-Ahzab 33:59"],
+    "hadith_refs": ["Sunan Abu Dawud 4104", "Sahih Bukhari, Book of Dress"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar / Fatawa Alamgiri"
+  },
+  {
+    "id": 96,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What are the etiquettes of eating in Islam?",
+    "answer": "Islamic etiquettes of eating: (1) Say Bismillah before eating, (2) Eat with the right hand, (3) Eat from what is in front of you, (4) Do not eat while lying down (sunnah to sit), (5) Do not blow on hot food, (6) Do not eat standing except out of necessity, (7) Express gratitude by saying Alhamdulillah after eating, (8) Avoid wastage — take only what you can eat, (9) Share food and invite others, (10) Do not criticize food — if you dislike it, leave it without comment. These are established sunnah practices.",
+    "quran_refs": ["Al-Baqarah 2:172"],
+    "hadith_refs": ["Sahih Bukhari 5376", "Sahih Muslim 2022"],
+    "madhab": "Hanafi",
+    "source": "Bahishti Zewar"
+  },
+  {
+    "id": 97,
+    "category": "Salah (Prayer)",
+    "question": "Is it permissible to offer prayer (dua) in one's own language during salah?",
+    "answer": "In the Hanafi school, the obligatory parts of salah (Fatiha, other recitation, tashahhud) must be in Arabic. However, dua (personal supplication) during the non-obligatory portions (like in sujud or after tashahhud before salam) may be made in any language according to most contemporary Hanafi scholars, though Arabic is preferred and more rewarding. The Quran recitation and formal dhikr of salah must remain in Arabic. One's personal duas to Allah outside of salah can certainly be in any language.",
+    "quran_refs": ["Al-Isra 17:110"],
+    "hadith_refs": ["Sahih Muslim 482"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Contemporary Fatawa"
+  },
+  {
+    "id": 98,
+    "category": "Zakat",
+    "question": "Can Zakat be given to build a mosque or madrasa?",
+    "answer": "In the strict Hanafi opinion, Zakat cannot be given to build mosques, madrasas, hospitals, or bridges — even for Islamic purposes — because Zakat requires 'tamleek' (transfer of ownership to an individual). These institutions are not individuals. However, Zakat CAN be given to individual students of Islamic knowledge (as fi sabilillah or fuqara) to pay their tuition or living expenses. Sadaqah (voluntary charity) and Zakat al-mal (non-obligatory) should be used for construction projects. Many contemporary scholars debate this — consult a local Mufti.",
+    "quran_refs": ["Al-Tawbah 9:60"],
+    "hadith_refs": ["Sunan Abu Dawud 1630"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Fatawa Alamgiri"
+  },
+  {
+    "id": 99,
+    "category": "Hajj & Umrah",
+    "question": "What is the Masjid al-Haram and its significance?",
+    "answer": "Masjid al-Haram in Makkah is the holiest mosque in Islam and houses the Ka'bah — the first house of worship built by Ibrahim (AS) and his son Ismail (AS). One prayer in Masjid al-Haram is equal to 100,000 prayers elsewhere. It contains: the Ka'bah, Hajar al-Aswad (Black Stone), Maqam Ibrahim, Zamzam well, Safa and Marwa hills. Facing the Ka'bah is the direction (qiblah) of all Muslim prayers worldwide. Entering Makkah and Masjid al-Haram requires ihram for Hajj/Umrah pilgrims; residents may enter freely.",
+    "quran_refs": ["Al-Imran 3:96-97", "Al-Baqarah 2:125"],
+    "hadith_refs": ["Sahih Bukhari 1190", "Sahih Muslim 1394"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 100,
+    "category": "Daily Life & Halal/Haram",
+    "question": "What is the ruling on using social media?",
+    "answer": "Social media (Facebook, Instagram, Twitter/X, TikTok) is neither inherently halal nor haram — its permissibility depends on how it is used. Permissible uses: spreading Islamic knowledge, maintaining family ties, business, education, news. Impermissible uses: viewing haram content, backbiting/gheebah online, spreading falsehoods, interacting with non-mahram in a prohibited manner, wasting time. The time spent should not neglect obligatory duties. One should guard their gaze, tongue, and character online just as offline. Dawah (calling to Allah) through social media is greatly rewarded.",
+    "quran_refs": ["Al-Hujurat 49:12", "Al-Isra 17:36"],
+    "hadith_refs": ["Sahih Bukhari 6018"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa"
+  },
+  {
+    "id": 101,
+    "category": "Taharat (Purification)",
+    "question": "What is the ruling on using perfume that contains alcohol?",
+    "answer": "Perfumes and colognes containing alcohol (ethanol) are widely used. The Hanafi position: grape/date-derived alcohol is najis, so perfumes with such alcohol would be impure and salah with them on clothing would be invalid. However, since most commercial alcohol in perfumes is synthetic (isopropyl or denatured ethanol), many contemporary Hanafi scholars consider them tahir (pure) for external use, making salah valid. The alcohol is haram to consume but not necessarily impure for external application. Using non-alcoholic alternatives (attar/itr from natural oils) is the safest option.",
+    "quran_refs": ["Al-Maidah 5:90"],
+    "hadith_refs": ["Fatawa of Contemporary Scholars"],
+    "madhab": "Hanafi",
+    "source": "Contemporary Fatawa"
+  },
+  {
+    "id": 102,
+    "category": "Salah (Prayer)",
+    "question": "What is the ruling on combining prayers (jam' bayn al-salatayn)?",
+    "answer": "The Hanafi school does not permit combining two prayers outside of their proper times except during Hajj at Muzdalifah (Maghrib and Isha combined) and at Arafah (Zuhr and Asr combined). This is the strictest position among the madhabs. The Shafi'i and Maliki schools permit combining prayers during travel and rain. If one must choose between the Hanafi restriction and missing prayer entirely, performing the prayer on time according to Hanafi rules is essential. During travel, the prayers are shortened (qasr) but not combined in the Hanafi school.",
+    "quran_refs": ["Al-Isra 17:78", "Al-Nisa 4:103"],
+    "hadith_refs": ["Sahih Muslim 705", "Muwatta Malik"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  },
+  {
+    "id": 103,
+    "category": "Sawm (Fasting)",
+    "question": "What is the ruling on applying kohl (surma) during fasting?",
+    "answer": "Applying kohl (surma/antimony) to the eyes during fasting does not break the fast in the Hanafi school. Even if some taste is sensed in the throat, the fast remains valid because the eyes are not a natural opening through which the fast is broken. Similarly, eye drops (when used for medical necessity) do not break the fast in the Hanafi opinion, though some precaution is recommended. The basic rule: things entering through natural openings that lead to the stomach or brain via recognized pathways break the fast.",
+    "quran_refs": ["Al-Baqarah 2:183"],
+    "hadith_refs": ["Sunan Abu Dawud 2377", "Sunan Ibn Majah 1678"],
+    "madhab": "Hanafi",
+    "source": "Hidayah / Bahishti Zewar"
+  }
+]
