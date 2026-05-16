@@ -1,6 +1,7 @@
 import os
 import json
 import pickle
+from pathlib import Path
 import numpy as np
 import faiss
 import streamlit as st
@@ -17,6 +18,7 @@ CATEGORIES_PATH = "fiqh_data/fiqh_categories.json"
 MODEL_NAME = "all-MiniLM-L6-v2"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 TOP_K = 5
+HF_REPO_ID = "ubaid-ai/fiqh-qa-bot-data"
 
 SYSTEM_PROMPT = """You are an Islamic Fiqh Q&A Assistant created by Ubaid ur Rehman, \
 an Aalim specializing in Islamic Fiqh (primarily Hanafi school, as followed in Pakistan/India).
@@ -252,15 +254,59 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+# ── Cloud Download (HuggingFace) ─────────────────────────────────────────────
+def ensure_data_files():
+    """Download FAISS data from HuggingFace if not available locally (cloud deployment)."""
+    index_dir = Path("faiss_index")
+    data_dir = Path("fiqh_data")
+
+    required = [
+        (index_dir / "fiqh.index", "fiqh.index"),
+        (index_dir / "chunks.pkl", "chunks.pkl"),
+    ]
+    data_files = [
+        (data_dir / "fiqh_qa.json", "fiqh_qa.json"),
+        (data_dir / "fiqh_categories.json", "fiqh_categories.json"),
+    ]
+
+    if all(f.exists() for f, _ in required + data_files):
+        return True
+
+    try:
+        from huggingface_hub import hf_hub_download
+
+        index_dir.mkdir(exist_ok=True)
+        data_dir.mkdir(exist_ok=True)
+
+        for local_path, hf_filename in required + data_files:
+            if not local_path.exists():
+                st.info(f"⏳ Downloading {hf_filename} from HuggingFace...")
+                hf_hub_download(
+                    repo_id=HF_REPO_ID,
+                    filename=hf_filename,
+                    repo_type="dataset",
+                    local_dir=str(local_path.parent),
+                    local_dir_use_symlinks=False,
+                )
+        return True
+    except ImportError:
+        return False
+    except Exception as e:
+        st.error(f"Download failed: {e}")
+        return False
+
+
 # ── Resource Loading ─────────────────────────────────────────────────────────
 @st.cache_resource(show_spinner="Loading knowledge base...")
 def load_resources():
     if not os.path.exists(INDEX_PATH) or not os.path.exists(CHUNKS_PATH):
-        st.error(
-            "FAISS index not found. Please run `python prepare_data.py` first.",
-            icon="⚠️",
-        )
-        st.stop()
+        with st.spinner("⏳ First launch: downloading Fiqh knowledge base from HuggingFace..."):
+            if not ensure_data_files():
+                st.error(
+                    "FAISS index not found. Please run `python prepare_data.py` first.",
+                    icon="⚠️",
+                )
+                st.stop()
     model = SentenceTransformer(MODEL_NAME)
     index = faiss.read_index(INDEX_PATH)
     with open(CHUNKS_PATH, "rb") as f:
