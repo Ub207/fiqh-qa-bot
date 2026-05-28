@@ -10,7 +10,13 @@ from google import genai
 from google.genai import types as genai_types
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).parent / ".env", override=True)
+if not os.environ.get("GEMINI_API_KEY"):
+    try:
+        import streamlit as _st
+        os.environ["GEMINI_API_KEY"] = _st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        pass
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 INDEX_PATH = "faiss_index/fiqh.index"
