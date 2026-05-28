@@ -6,7 +6,7 @@ import numpy as np
 import faiss
 import streamlit as st
 from sentence_transformers import SentenceTransformer
-from groq import Groq
+from groq import Groq, RateLimitError
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -506,13 +506,20 @@ def get_answer(client, query, context, chat_history):
             f"Please answer this question: {query}"
         ),
     })
-    resp = client.chat.completions.create(
-        model=GROQ_MODEL,
-        messages=messages,
-        temperature=0.3,
-        max_tokens=1024,
-    )
-    return resp.choices[0].message.content
+    try:
+        resp = client.chat.completions.create(
+            model=GROQ_MODEL,
+            messages=messages,
+            temperature=0.3,
+            max_tokens=1024,
+        )
+        return resp.choices[0].message.content
+    except RateLimitError:
+        return (
+            "⚠️ **Rate limit reached.** The free Groq API allows a limited number of "
+            "requests per minute/day. Please wait a minute and try again, or check your "
+            "Groq console to upgrade your plan."
+        )
 
 
 # ── Rendering Helpers ─────────────────────────────────────────────────────────
