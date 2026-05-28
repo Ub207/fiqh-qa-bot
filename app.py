@@ -54,8 +54,6 @@ EXAMPLE_QUESTIONS = [
     "Is seafood halal in Hanafi fiqh?",
     "Taraweeh 20 rakat ki daleel?",
     "Sood (interest) ki hurmat kya hai?",
-    "Photography/tasweer ka shari hukm?",
-    "Talaq ke kitni iqsaam hain?",
 ]
 
 # ── Page Config ──────────────────────────────────────────────────────────────
@@ -66,190 +64,326 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ── Custom CSS (Light Purple Theme + Anti-Flicker) ───────────────────────────
+# ── Custom CSS ───────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    /* ── Color Palette ── */
+    /* ── Imports ── */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    /* ── Reset & Base ── */
     :root {
-        --primary:         #6A1B9A;
-        --primary-light:   #9C27B0;
-        --primary-lighter: #E1BEE7;
-        --accent:          #AB47BC;
-        --bg-main:         #F3E5F5;
-        --bg-card:         #FFFFFF;
-        --bg-sidebar:      #EDE7F6;
-        --text-primary:    #311B47;
-        --text-secondary:  #6A1B9A;
-        --text-muted:      #7E57C2;
-        --border:          #CE93D8;
-        --gold:            #F9A825;
-        --shadow:          rgba(106,27,154,0.1);
+        --teal:          #0D9488;
+        --teal-dark:     #0F766E;
+        --teal-light:    #CCFBF1;
+        --teal-lighter:  #F0FDFA;
+        --teal-border:   #99F6E4;
+        --text:          #374151;
+        --text-light:    #6B7280;
+        --text-muted:    #9CA3AF;
+        --bg:            #FFFFFF;
+        --bg-subtle:     #F9FAFB;
+        --border:        #E5E7EB;
+        --shadow-sm:     0 1px 3px rgba(0,0,0,0.08);
+        --shadow-md:     0 4px 16px rgba(0,0,0,0.08);
     }
 
-    /* ── Anti-Flicker ── */
+    /* ── App shell ── */
     .stApp {
+        background: #FFFFFF !important;
+        color: var(--text);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
     }
-    .main-header, .user-message, .assistant-message,
-    .disclaimer-box, .sources-box, .footer {
-        animation: none !important;
-        transition: none !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
-    [data-testid="stVerticalBlock"],
-    [data-testid="stHorizontalBlock"],
-    .element-container {
-        animation: none !important;
-        transition: none !important;
+    .main .block-container {
+        padding-top: 1.5rem !important;
+        padding-bottom: 2rem !important;
+        max-width: 860px !important;
     }
 
-    /* ── App Background ── */
-    .stApp {
-        background: linear-gradient(135deg, #F3E5F5 0%, #EDE7F6 50%, #F3E5F5 100%);
-        color: var(--text-primary);
+    /* ── Sidebar ── */
+    [data-testid="stSidebar"] {
+        background: #FFFFFF !important;
+        border-right: 1px solid var(--border) !important;
     }
+    [data-testid="stSidebar"] > div:first-child {
+        padding-top: 1.5rem;
+    }
+    .sidebar-brand {
+        text-align: center;
+        padding: 0.5rem 1rem 1.5rem;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 1.5rem;
+    }
+    .sidebar-icon {
+        font-size: 2.8rem;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+    .sidebar-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--teal-dark);
+        margin: 0.3rem 0 0.2rem;
+    }
+    .sidebar-desc {
+        font-size: 0.78rem;
+        color: var(--text-light);
+        line-height: 1.4;
+    }
+    .sidebar-meta {
+        margin-top: 1.5rem;
+        padding: 0.75rem 1rem;
+        background: var(--teal-lighter);
+        border-radius: 10px;
+        border: 1px solid var(--teal-border);
+        font-size: 0.75rem;
+        color: var(--teal-dark);
+        line-height: 1.7;
+    }
+    .sidebar-meta strong { font-weight: 600; }
 
     /* ── Header ── */
     .main-header {
         text-align: center;
-        padding: 1.5rem 1rem 1.2rem;
-        background: linear-gradient(135deg, #6A1B9A, #9C27B0);
-        border-radius: 16px;
+        padding: 2rem 1.5rem 1.5rem;
         margin-bottom: 1.5rem;
-        box-shadow: 0 4px 20px rgba(106,27,154,0.2);
+        border-bottom: 2px solid var(--teal-lighter);
+        position: relative;
+        animation: none !important;
+        opacity: 1 !important;
     }
-    .main-header h1 {
-        font-size: 2rem;
-        color: #FFFFFF;
-        margin: 0.3rem 0;
-        text-shadow: none;
-    }
-    .main-header p {
-        color: #E1BEE7;
-        font-size: 0.9rem;
-        margin: 0.3rem 0 0;
-    }
-    .arabic-title {
-        font-size: 1.4rem;
-        color: #F9A825;
+    .header-arabic {
+        font-size: 1.35rem;
+        color: var(--teal);
         direction: rtl;
-        margin-bottom: 0.2rem;
         font-weight: 600;
+        margin-bottom: 0.4rem;
+        letter-spacing: 0.02em;
+    }
+    .header-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--text);
+        margin: 0.2rem 0;
+    }
+    .header-title span { color: var(--teal); }
+    .header-sub {
+        font-size: 0.85rem;
+        color: var(--text-light);
+        margin-top: 0.4rem;
+    }
+    .header-line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 0.8rem;
+    }
+    .header-dot {
+        width: 6px; height: 6px;
+        border-radius: 50%;
+        background: var(--teal);
+        opacity: 0.4;
+    }
+    .header-dot.center { opacity: 1; width: 8px; height: 8px; }
+
+    /* ── Welcome Screen ── */
+    .welcome-wrap {
+        text-align: center;
+        padding: 2.5rem 1rem 2rem;
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    .welcome-icon { font-size: 3rem; margin-bottom: 0.75rem; }
+    .welcome-title {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 0.3rem;
+    }
+    .welcome-sub {
+        font-size: 0.9rem;
+        color: var(--text-light);
+        margin-bottom: 0.2rem;
+        direction: rtl;
+    }
+    .welcome-hint {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin-top: 1.2rem;
+    }
+    .example-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 0 0.5rem;
     }
 
     /* ── Chat Messages ── */
-    .user-message {
-        background: linear-gradient(135deg, #7B1FA2, #9C27B0);
+    .msg-wrap-user {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0.7rem 0;
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    .msg-wrap-assistant {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0.7rem 0;
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    .user-bubble {
+        background: var(--teal-light);
         border-radius: 18px 18px 4px 18px;
-        padding: 0.9rem 1.2rem;
-        margin: 0.6rem 0 0.6rem auto;
-        max-width: 82%;
-        color: #FFFFFF;
-        box-shadow: 0 2px 12px rgba(106,27,154,0.2);
+        padding: 0.85rem 1.1rem;
+        max-width: 75%;
+        color: #134E4A;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        box-shadow: var(--shadow-sm);
     }
-    .assistant-message {
-        background: #FFFFFF;
-        border: 1px solid #CE93D8;
-        border-radius: 18px 18px 18px 4px;
-        padding: 0.9rem 1.2rem;
-        margin: 0.6rem 0;
-        max-width: 90%;
-        color: #311B47;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-    .message-label {
-        font-size: 0.72rem;
+    .user-label {
+        font-size: 0.68rem;
         font-weight: 700;
-        margin-bottom: 0.4rem;
-        letter-spacing: 0.5px;
         text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--teal-dark);
+        margin-bottom: 0.35rem;
+        opacity: 0.75;
     }
-    .user-label    { color: #E1BEE7; }
-    .assistant-label { color: #9C27B0; }
+    .assistant-card {
+        background: #FFFFFF;
+        border-left: 4px solid var(--teal);
+        border-radius: 0 16px 16px 0;
+        padding: 1rem 1.2rem;
+        max-width: 88%;
+        color: var(--text);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        box-shadow: var(--shadow-md);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        border-right: 1px solid var(--border);
+    }
+    .assistant-label {
+        font-size: 0.68rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--teal);
+        margin-bottom: 0.4rem;
+        opacity: 0.85;
+    }
 
     /* ── Sources Box ── */
     .sources-box {
-        background: #F3E5F5;
-        border: 1px solid #CE93D8;
-        border-radius: 10px;
-        padding: 0.65rem 1rem;
-        margin-top: 0.8rem;
-        font-size: 0.8rem;
-        color: #4A148C;
+        background: var(--teal-lighter);
+        border: 1px solid var(--teal-border);
+        border-radius: 8px;
+        padding: 0.6rem 0.9rem;
+        margin-top: 0.85rem;
+        font-size: 0.78rem;
+        color: #0F766E;
+        line-height: 1.6;
     }
-    .sources-box strong { color: #6A1B9A; }
+    .sources-box strong { font-weight: 600; }
 
-    /* ── Sidebar ── */
-    [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #EDE7F6, #E1BEE7) !important;
-    }
-
-    /* ── Disclaimer Box ── */
-    .disclaimer-box {
-        background: #FFF8E1;
-        border: 1px solid #F9A825;
-        border-radius: 12px;
-        padding: 0.8rem 1rem;
-        font-size: 0.8rem;
-        color: #4A148C;
-        margin: 0.5rem 0;
-    }
-    .disclaimer-box strong { color: #9C27B0; }
-
-    /* ── Input ── */
+    /* ── Input area ── */
     .stTextInput > div > div > input {
-        background: #FFFFFF !important;
-        border: 2px solid #CE93D8 !important;
-        color: #311B47 !important;
+        background: var(--bg-subtle) !important;
+        border: 1.5px solid var(--border) !important;
         border-radius: 12px !important;
+        color: var(--text) !important;
+        font-size: 0.95rem !important;
+        padding: 0.7rem 1rem !important;
+        transition: none !important;
     }
     .stTextInput > div > div > input:focus {
-        border-color: #9C27B0 !important;
-        box-shadow: 0 0 0 3px rgba(156,39,176,0.15) !important;
+        border-color: var(--teal) !important;
+        background: #FFFFFF !important;
+        box-shadow: 0 0 0 3px rgba(13,148,136,0.12) !important;
+        outline: none !important;
+    }
+    .stTextInput > div > div > input::placeholder {
+        color: var(--text-muted) !important;
     }
 
     /* ── Buttons ── */
     .stButton > button {
-        background: linear-gradient(135deg, #7B1FA2, #9C27B0) !important;
-        color: white !important;
+        background: var(--teal) !important;
+        color: #FFFFFF !important;
         border: none !important;
-        border-radius: 12px !important;
+        border-radius: 10px !important;
         font-weight: 600 !important;
-        box-shadow: 0 2px 8px rgba(106,27,154,0.25) !important;
+        font-size: 0.88rem !important;
+        padding: 0.6rem 1rem !important;
+        box-shadow: 0 2px 8px rgba(13,148,136,0.25) !important;
         transition: none !important;
+        letter-spacing: 0.02em !important;
     }
     .stButton > button:hover {
-        background: linear-gradient(135deg, #9C27B0, #AB47BC) !important;
-        box-shadow: 0 4px 16px rgba(106,27,154,0.35) !important;
-        transform: translateY(-1px) !important;
+        background: var(--teal-dark) !important;
+        box-shadow: 0 4px 14px rgba(13,148,136,0.3) !important;
+    }
+    .stButton > button:focus {
+        box-shadow: 0 0 0 3px rgba(13,148,136,0.2) !important;
     }
 
     /* ── Selectbox ── */
     .stSelectbox > div > div {
-        background: #FFFFFF !important;
-        border: 1px solid #CE93D8 !important;
-        color: #311B47 !important;
+        background: var(--bg-subtle) !important;
+        border: 1.5px solid var(--border) !important;
+        border-radius: 10px !important;
+        color: var(--text) !important;
+        font-size: 0.88rem !important;
+    }
+    .stSelectbox label {
+        color: var(--text-light) !important;
+        font-size: 0.8rem !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    /* ── Spinner ── */
+    .stSpinner > div {
+        border-top-color: var(--teal) !important;
     }
 
     /* ── Footer ── */
     .footer {
         text-align: center;
-        padding: 1rem;
-        color: #7E57C2;
-        font-size: 0.78rem;
-        border-top: 1px solid #CE93D8;
-        margin-top: 2rem;
+        padding: 1.2rem 1rem 0.5rem;
+        color: var(--text-muted);
+        font-size: 0.76rem;
+        border-top: 1px solid var(--border);
+        margin-top: 2.5rem;
+        line-height: 1.6;
     }
+    .footer strong { color: var(--text-light); font-weight: 600; }
 
     /* ── Hide Streamlit chrome ── */
     #MainMenu, footer, header { visibility: hidden; }
+    [data-testid="stToolbar"] { display: none; }
 
     /* ── Scrollbar ── */
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #F3E5F5; }
-    ::-webkit-scrollbar-thumb { background: #CE93D8; border-radius: 3px; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--teal-border); border-radius: 4px; }
+
+    /* ── Anti-flicker ── */
+    .main-header, .user-bubble, .assistant-card,
+    .sources-box, .footer, .welcome-wrap,
+    [data-testid="stVerticalBlock"], .element-container {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -385,83 +519,66 @@ def get_answer(client, query, context, chat_history):
 def render_message(role, content, sources=None):
     if role == "user":
         st.markdown(
-            f"<div class='user-message'>"
-            f"<div class='message-label user-label'>🧑 You</div>"
-            f"{content}</div>",
+            f"<div class='msg-wrap-user'>"
+            f"<div class='user-bubble'>"
+            f"<div class='user-label'>You</div>"
+            f"{content}"
+            f"</div></div>",
             unsafe_allow_html=True,
         )
     else:
-        st.markdown(
-            f"<div class='assistant-message'>"
-            f"<div class='message-label assistant-label'>☪️ Fiqh Assistant</div>"
-            f"{content}",
-            unsafe_allow_html=True,
-        )
+        refs_html = ""
         if sources:
-            refs_html = ""
             for _, chunk in sources[:3]:
                 quran = ", ".join(chunk["quran_refs"]) if chunk["quran_refs"] else "—"
                 hadith = (", ".join(chunk["hadith_refs"][:2])
                           if chunk["hadith_refs"] else "—")
                 refs_html += (
-                    f"<b>{chunk['category']}</b> | "
-                    f"Quran: {quran} | Hadith: {hadith} | "
+                    f"<b>{chunk['category']}</b> · "
+                    f"Quran: {quran} · Hadith: {hadith} · "
                     f"Source: {chunk['source']}<br>"
                 )
-            st.markdown(
-                f"<div class='sources-box'>"
-                f"<strong>📖 References Used:</strong><br>{refs_html}"
-                f"</div></div>",
-                unsafe_allow_html=True,
-            )
-        else:
-            st.markdown("</div>", unsafe_allow_html=True)
+        sources_section = (
+            f"<div class='sources-box'><strong>📖 References Used</strong><br>{refs_html}</div>"
+            if refs_html else ""
+        )
+        st.markdown(
+            f"<div class='msg-wrap-assistant'>"
+            f"<div class='assistant-card'>"
+            f"<div class='assistant-label'>☪ Fiqh Assistant</div>"
+            f"{content}"
+            f"{sources_section}"
+            f"</div></div>",
+            unsafe_allow_html=True,
+        )
 
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 def render_sidebar(categories):
     with st.sidebar:
         st.markdown("""
-        <div style='text-align:center; padding:0.5rem 0 1rem;'>
-            <div style='font-size:2.5rem;'>☪️</div>
-            <div style='color:#6A1B9A; font-weight:700; font-size:1.1rem;'>
-                Islamic Fiqh Assistant
+        <div class='sidebar-brand'>
+            <div class='sidebar-icon'>☪️</div>
+            <div class='sidebar-title'>Islamic Fiqh Assistant</div>
+            <div class='sidebar-desc'>
+                AI-powered Q&amp;A grounded in classical Hanafi scholarship and
+                Fatawa Darul Uloom Deoband
             </div>
-            <div style='color:#7E57C2; font-size:0.8rem;'>Hanafi School | حنفی مذہب</div>
+            <div class='sidebar-meta'>
+                <strong>School:</strong> Hanafi · حنفی مذہب<br>
+                <strong>LLM:</strong> Llama 3.3 70B (Groq)<br>
+                <strong>Embeddings:</strong> all-MiniLM-L6-v2<br>
+                <strong>Sources:</strong> Darul Uloom Deoband + Classical texts
+            </div>
         </div>
         """, unsafe_allow_html=True)
 
-        st.markdown("### 📚 Filter by Category")
+        st.markdown("**Filter by Category**")
         cat_names = ["All"] + [c["name"] for c in categories]
         selected = st.selectbox("Category", cat_names, label_visibility="collapsed")
 
-        st.markdown("### 💡 Example Questions")
-        for q in EXAMPLE_QUESTIONS[:6]:
-            if st.button(q, key=f"eq_{q[:20]}", use_container_width=True):
-                st.session_state.pending_question = q
-                st.rerun()
-
-        st.markdown("---")
-        st.markdown("""
-        <div class='disclaimer-box'>
-            <strong>⚠️ Important Disclaimers</strong><br><br>
-            🔹 This is an <strong>AI-powered educational tool</strong>,
-            <strong>NOT a fatwa service</strong>.<br><br>
-            🔹 For personal rulings, consult a <strong>qualified Mufti</strong>.<br><br>
-            🔹 Primarily follows the <strong>Hanafi school</strong>.<br><br>
-            🔹 Sources: Fatawa Darul Uloom Deoband &amp; classical Hanafi texts.
-        </div>
-        """, unsafe_allow_html=True)
-
-        st.markdown("---")
-        st.markdown("""
-        <div style='text-align:center; color:#9C27B0; font-size:0.75rem;'>
-            Created by <strong style='color:#6A1B9A;'>Ubaid ur Rehman</strong><br>
-            Aalim | Islamic Fiqh Specialist
-        </div>
-        """, unsafe_allow_html=True)
-
-        if st.button("🗑️ Clear Chat", use_container_width=True):
+        st.markdown("<br>", unsafe_allow_html=True)
+        if st.button("🗑️ Clear Conversation", use_container_width=True):
             st.session_state.messages = []
             st.session_state.sources_map = {}
             st.rerun()
@@ -484,31 +601,44 @@ def main():
 
     selected_category = render_sidebar(categories)
 
-    # Header
+    # ── Header ────────────────────────────────────────────────────────────────
     st.markdown("""
     <div class='main-header'>
-        <div class='arabic-title'>مساعد الفقه الإسلامي</div>
-        <h1>☪️ Islamic Fiqh Q&amp;A Assistant</h1>
-        <p>Answers based on Hanafi school · Fatawa Darul Uloom Deoband · Quran &amp; Hadith references</p>
+        <div class='header-arabic'>مساعد الفقه الإسلامي</div>
+        <div class='header-title'>☪ Islamic <span>Fiqh</span> Q&amp;A Assistant</div>
+        <div class='header-sub'>
+            Hanafi school · Fatawa Darul Uloom Deoband · Quran &amp; Hadith references
+        </div>
+        <div class='header-line'>
+            <div class='header-dot'></div>
+            <div class='header-dot'></div>
+            <div class='header-dot center'></div>
+            <div class='header-dot'></div>
+            <div class='header-dot'></div>
+        </div>
     </div>
     """, unsafe_allow_html=True)
 
-    # ── Render saved chat history ─────────────────────────────────────────────
+    # ── Chat history or welcome screen ────────────────────────────────────────
     if not st.session_state.messages:
         st.markdown("""
-        <div style='text-align:center; padding:3rem 1rem; color:#7E57C2;'>
-            <div style='font-size:3rem; margin-bottom:1rem;'>📖</div>
-            <div style='font-size:1.1rem; color:#6A1B9A; font-weight:600;'>
-                Assalamu Alaykum! Ask any question about Islamic Fiqh.
-            </div>
-            <div style='color:#7E57C2; margin-top:0.5rem; font-size:0.9rem;'>
-                السلام علیکم! اسلامی فقہ کے بارے میں کوئی بھی سوال پوچھیں۔
-            </div>
-            <div style='margin-top:1.5rem; color:#AB47BC; font-size:0.85rem;'>
-                Use the example questions in the sidebar or type your own below.
-            </div>
-        </div>
+        <div class='welcome-wrap'>
+            <div class='welcome-icon'>📖</div>
+            <div class='welcome-title'>Assalamu Alaykum — How can I help?</div>
+            <div class='welcome-sub'>السلام علیکم! اسلامی فقہ کے بارے میں کوئی بھی سوال پوچھیں</div>
+            <div class='welcome-hint'>Try one of the examples below, or type your own question</div>
+            <div class='example-grid'>
         """, unsafe_allow_html=True)
+
+        # Render example question buttons in a tight grid
+        cols = st.columns(2)
+        for i, q in enumerate(EXAMPLE_QUESTIONS):
+            with cols[i % 2]:
+                if st.button(q, key=f"eq_{i}", use_container_width=True):
+                    st.session_state.pending_question = q
+                    st.rerun()
+
+        st.markdown("</div></div>", unsafe_allow_html=True)
     else:
         for msg in st.session_state.messages:
             sources = st.session_state.sources_map.get(msg.get("id"))
@@ -519,55 +649,46 @@ def main():
 
     # ── Input area ────────────────────────────────────────────────────────────
     st.markdown("<br>", unsafe_allow_html=True)
-    col1, col2 = st.columns([6, 1])
+    col1, col2 = st.columns([7, 1])
     with col1:
         default_val = st.session_state.pending_question or ""
         user_input = st.text_input(
             "Ask a fiqh question",
             value=default_val,
-            placeholder="e.g., What breaks wudu? | Zakat ki nisab kya hai?",
+            placeholder="e.g., What breaks wudu? · Zakat ki nisab kya hai?",
             label_visibility="collapsed",
             key="chat_input",
         )
     with col2:
         send = st.button("Send ➤", use_container_width=True)
 
-    # Clear pending after it has been placed in the input box
     if st.session_state.pending_question:
         st.session_state.pending_question = None
 
-    # ── Process query (NO st.rerun — render inline immediately) ──────────────
+    # ── Process query ─────────────────────────────────────────────────────────
     if (send or user_input) and user_input.strip():
         query = user_input.strip()
 
-        # Save user message to state
         msg_id = len(st.session_state.messages)
         st.session_state.messages.append({"role": "user", "content": query, "id": msg_id})
-
-        # Render user message right now
         render_message("user", query)
 
-        # Get answer
         with st.spinner("Searching Islamic knowledge base..."):
             results = search_fiqh(query, model, index, chunks, selected_category)
             context = build_context(results)
             answer = get_answer(client, query, context, st.session_state.messages[:-1])
 
-        # Save assistant message to state
         ans_id = len(st.session_state.messages)
         st.session_state.messages.append({"role": "assistant", "content": answer, "id": ans_id})
         st.session_state.sources_map[ans_id] = results
-
-        # Render assistant message right now — no st.rerun() needed
         render_message("assistant", answer, results)
 
-    # Footer
+    # ── Footer ────────────────────────────────────────────────────────────────
     st.markdown("""
     <div class='footer'>
-        ⚠️ <strong>Disclaimer:</strong> Educational tool only — <strong>NOT a fatwa service</strong>.
-        Consult a qualified Mufti for personal rulings. |
-        Primarily follows <strong>Hanafi</strong> school. |
-        Sources: <strong>Fatawa Darul Uloom Deoband</strong> &amp; classical Hanafi texts. |
+        ⚠️ <strong>Educational tool only — not a fatwa service.</strong>
+        Consult a qualified Mufti for personal rulings. ·
+        Primarily follows the <strong>Hanafi</strong> school. ·
         Created by <strong>Ubaid ur Rehman</strong>
     </div>
     """, unsafe_allow_html=True)
