@@ -7,6 +7,7 @@ import faiss
 import streamlit as st
 from sentence_transformers import SentenceTransformer
 from groq import Groq, RateLimitError
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -17,6 +18,7 @@ CHUNKS_PATH = "faiss_index/chunks.pkl"
 CATEGORIES_PATH = "fiqh_data/fiqh_categories.json"
 MODEL_NAME = "all-MiniLM-L6-v2"
 GROQ_MODEL = "llama-3.3-70b-versatile"
+GEMINI_MODEL = "gemini-1.5-flash"
 TOP_K = 5
 HF_REPO_ID = "ubaid-ai/fiqh-qa-bot-data"
 
@@ -495,7 +497,38 @@ def build_context(results):
 
 
 # ── LLM Response ─────────────────────────────────────────────────────────────
+def get_answer_gemini(query, context, chat_history):
+    gemini_key = os.getenv("GEMINI_API_KEY")
+    if not gemini_key:
+        return None
+    genai.configure(api_key=gemini_key)
+    model = genai.GenerativeModel(
+        model_name=GEMINI_MODEL,
+        system_instruction=SYSTEM_PROMPT,
+    )
+    history = []
+    for h in chat_history[-6:]:
+        role = "user" if h["role"] == "user" else "model"
+        history.append({"role": role, "parts": [h["content"]]})
+    chat = model.start_chat(history=history)
+    user_msg = (
+        f"Based on the following fiqh knowledge base:\n\n{context}\n\n"
+        f"Please answer this question: {query}"
+    )
+    resp = chat.send_message(user_msg)
+    return resp.text
+
+
 def get_answer(client, query, context, chat_history):
+    # Try Gemini first
+    try:
+        result = get_answer_gemini(query, context, chat_history)
+        if result:
+            return result
+    except Exception:
+        pass  # Fall through to Groq
+
+    # Fall back to Groq
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for h in chat_history[-6:]:
         messages.append({"role": h["role"], "content": h["content"]})
@@ -516,9 +549,8 @@ def get_answer(client, query, context, chat_history):
         return resp.choices[0].message.content
     except RateLimitError:
         return (
-            "⚠️ **Rate limit reached.** The free Groq API allows a limited number of "
-            "requests per minute/day. Please wait a minute and try again, or check your "
-            "Groq console to upgrade your plan."
+            "⚠️ **Rate limit reached** on both Gemini and Groq. "
+            "Please wait a minute and try again."
         )
 
 
