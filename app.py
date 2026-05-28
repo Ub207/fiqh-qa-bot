@@ -18,7 +18,7 @@ CHUNKS_PATH = "faiss_index/chunks.pkl"
 CATEGORIES_PATH = "fiqh_data/fiqh_categories.json"
 MODEL_NAME = "all-MiniLM-L6-v2"
 GEMINI_MODEL = "gemini-1.5-flash-latest"
-TOP_K = 5
+TOP_K = 8
 HF_REPO_ID = "ubaid-ai/fiqh-qa-bot-data"
 
 SYSTEM_PROMPT = """You are an Islamic Fiqh Q&A Assistant created by Ubaid ur Rehman, \
@@ -40,8 +40,12 @@ advise the user to consult a qualified Mufti.
 - Be respectful, scholarly, and accurate. Do not fabricate hadith references.
 - If the provided context does not contain enough information, say so clearly \
 rather than inventing an answer.
+- Give DETAILED, comprehensive answers — never give a one-liner. A proper fiqh answer \
+should explain the ruling, its evidence (daleel), and any relevant conditions or exceptions.
+- Structure your answer clearly: ruling first, then daleel, then explanation.
 - Format answers clearly with references at the end when appropriate.
 - When answering, include Arabic daleel (Quran/Hadith text) where available.
+- Minimum response length: 150 words for any fiqh question.
 
 IMPORTANT DISCLAIMER: This is an educational tool, not a fatwa service. \
 Always recommend consulting a qualified scholar for personal rulings."""
@@ -390,7 +394,7 @@ def get_answer(client, query, context, chat_history):
             config=genai_types.GenerateContentConfig(
                 system_instruction=SYSTEM_PROMPT,
                 temperature=0.3,
-                max_output_tokens=1024,
+                max_output_tokens=2048,
             ),
             history=history,
         )
