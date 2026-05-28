@@ -6,15 +6,14 @@ import numpy as np
 import faiss
 import streamlit as st
 from sentence_transformers import SentenceTransformer
-from google import genai
-from google.genai import types as genai_types
+from groq import Groq
 from dotenv import load_dotenv
 
 load_dotenv(dotenv_path=Path(__file__).parent / ".env", override=True)
-if not os.environ.get("GEMINI_API_KEY"):
+if not os.environ.get("GROQ_API_KEY"):
     try:
         import streamlit as _st
-        os.environ["GEMINI_API_KEY"] = _st.secrets["GEMINI_API_KEY"]
+        os.environ["GROQ_API_KEY"] = _st.secrets["GROQ_API_KEY"]
     except Exception:
         pass
 
@@ -23,7 +22,7 @@ INDEX_PATH = "faiss_index/fiqh.index"
 CHUNKS_PATH = "faiss_index/chunks.pkl"
 CATEGORIES_PATH = "fiqh_data/fiqh_categories.json"
 MODEL_NAME = "all-MiniLM-L6-v2"
-GEMINI_MODEL = "gemini-1.5-flash-latest"
+GROQ_MODEL = "llama-3.3-70b-versatile"
 TOP_K = 8
 HF_REPO_ID = "ubaid-ai/fiqh-qa-bot-data"
 
@@ -318,56 +317,90 @@ def load_categories():
         return json.load(f)["categories"]
 
 
-def get_gemini_client():
-    api_key = os.getenv("GEMINI_API_KEY")
+def get_groq_client():
+    api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
-        st.error("GEMINI_API_KEY not found. Add it to your .env file.", icon="🔑")
+        st.error("GROQ_API_KEY not found.", icon="🔑")
         st.stop()
-    return genai.Client(api_key=api_key)
+    return Groq(api_key=api_key)
 
 
 # ── Translation Helper ────────────────────────────────────────────────────────
 def translate_query_to_english(query: str, client) -> tuple[str, bool]:
-    """
-    Roman Urdu / Urdu queries ko English mein translate karo for better FAISS search.
-    Returns: (translated_query, was_translated)
-    """
     if client is None:
         return query, False
     try:
-        chat = client.chats.create(
-            model=GEMINI_MODEL,
-            config=genai_types.GenerateContentConfig(
-                system_instruction=TRANSLATE_SYSTEM_PROMPT,
-                temperature=0.1,
-                max_output_tokens=30,
-            ),
+        resp = client.chat.completions.create(
+            model=GROQ_MODEL,
+            messages=[
+                {"role": "system", "content": TRANSLATE_SYSTEM_PROMPT},
+                {"role": "user", "content": query},
+            ],
+            max_tokens=30,
+            temperature=0.1,
         )
-        resp = chat.send_message(query)
-        translated = resp.text.strip()
+        translated = resp.choices[0].message.content.strip()
         was_translated = translated.lower() != query.lower()
         return translated, was_translated
     except Exception:
-        # Translation fail ho toh original query use karo — app crash na ho
         return query, False
 
 
 # ── RAG Search ────────────────────────────────────────────────────────────────
+SCORE_THRESHOLD = 0.3
+
+KEYWORD_CATEGORY_MAP = {
+    "zakat": "Zakat", "nisab": "Zakat", "sadqa": "Zakat", "sadaqah": "Zakat",
+    "sood": "Tijarah (Business & Finance)", "riba": "Tijarah (Business & Finance)",
+    "interest": "Tijarah (Business & Finance)", "usury": "Tijarah (Business & Finance)",
+    "tijarah": "Tijarah (Business & Finance)", "business": "Tijarah (Business & Finance)",
+    "namaz": "Salah (Prayer)", "salah": "Salah (Prayer)", "prayer": "Salah (Prayer)",
+    "namaaz": "Salah (Prayer)", "taraweeh": "Salah (Prayer)",
+    "wudu": "Taharat (Purification)", "wuzu": "Taharat (Purification)",
+    "ghusl": "Taharat (Purification)", "taharat": "Taharat (Purification)",
+    "purification": "Taharat (Purification)",
+    "roza": "Sawm (Fasting)", "fasting": "Sawm (Fasting)",
+    "ramadan": "Sawm (Fasting)", "sawm": "Sawm (Fasting)", "siyam": "Sawm (Fasting)",
+    "nikah": "Nikah (Marriage)", "marriage": "Nikah (Marriage)",
+    "talaq": "Nikah (Marriage)", "divorce": "Nikah (Marriage)",
+    "hajj": "Hajj & Umrah", "umrah": "Hajj & Umrah",
+    "halal": "Daily Life & Halal/Haram", "haram": "Daily Life & Halal/Haram",
+}
+
+
 def search_fiqh(query, model, index, chunks, category_filter="All", k=TOP_K):
     query_vec = model.encode([query], convert_to_numpy=True).astype(np.float32)
     faiss.normalize_L2(query_vec)
     scores, indices = index.search(query_vec, k * 3)
-    results = []
+
+    # Detect boost categories from query keywords
+    query_lower = query.lower()
+    boost_categories = {cat for kw, cat in KEYWORD_CATEGORY_MAP.items() if kw in query_lower}
+
+    boosted, regular, fallback = [], [], []
     for score, idx in zip(scores[0], indices[0]):
         if idx == -1:
             continue
         chunk = chunks[idx]
         if category_filter != "All" and chunk["category"] != category_filter:
             continue
-        results.append((score, chunk))
-        if len(results) >= k:
-            break
-    return results
+
+        fallback.append((score, chunk))
+
+        if score < SCORE_THRESHOLD:
+            continue
+
+        if boost_categories and chunk["category"] in boost_categories:
+            boosted.append((score, chunk))
+        else:
+            regular.append((score, chunk))
+
+    results = (boosted + regular)[:k]
+    if results:
+        return results, False
+
+    # Nothing passed threshold — return top 3 with low-confidence flag
+    return fallback[:3], True
 
 
 def build_context(results):
@@ -386,31 +419,26 @@ def build_context(results):
 
 # ── LLM Response ──────────────────────────────────────────────────────────────
 def get_answer(client, query, context, chat_history):
-    history = []
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for h in chat_history[-6:]:
-        role = "user" if h["role"] == "user" else "model"
-        history.append(genai_types.Content(role=role, parts=[genai_types.Part(text=h["content"])]))
-    user_msg = (
-        f"Based on the following fiqh knowledge base:\n\n{context}\n\n"
-        f"Please answer this question: {query}"
-    )
+        messages.append({"role": h["role"], "content": h["content"]})
+    messages.append({
+        "role": "user",
+        "content": f"Fiqh Knowledge Base:\n\n{context}\n\nQuestion: {query}",
+    })
     try:
-        chat = client.chats.create(
-            model=GEMINI_MODEL,
-            config=genai_types.GenerateContentConfig(
-                system_instruction=SYSTEM_PROMPT,
-                temperature=0.3,
-                max_output_tokens=2048,
-            ),
-            history=history,
+        resp = client.chat.completions.create(
+            model=GROQ_MODEL,
+            messages=messages,
+            max_tokens=2048,
+            temperature=0.3,
         )
-        resp = chat.send_message(user_msg)
-        return resp.text
+        return resp.choices[0].message.content
     except Exception as e:
         err = str(e).lower()
-        if "429" in err or "quota" in err or "rate" in err:
-            return "⏳ AI is resting for a moment. Please wait 1-2 minutes and try again."
-        return f"⚠️ **Error:** {e}\n\nPlease try again."
+        if "429" in err or "rate" in err:
+            return "⏳ AI is resting. Please wait 1-2 minutes and try again."
+        return f"⚠️ Error: {e}"
 
 
 # ── Rendering ─────────────────────────────────────────────────────────────────
@@ -459,7 +487,7 @@ def render_sidebar(categories):
             </div>
             <div class='sidebar-meta'>
                 <strong>School:</strong> Hanafi · حنفی مذہب<br>
-                <strong>LLM:</strong> Gemini 1.5 Flash<br>
+                <strong>LLM:</strong> Llama 3.3 70B (Groq)<br>
                 <strong>Embeddings:</strong> all-MiniLM-L6-v2<br>
                 <strong>Sources:</strong> Darul Uloom Deoband + Classical texts
             </div>
@@ -484,7 +512,7 @@ def render_sidebar(categories):
 def main():
     model, index, chunks = load_resources()
     categories = load_categories()
-    client = get_gemini_client()
+    client = get_groq_client()
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -582,8 +610,11 @@ def main():
 
         with st.spinner("🔍 Searching Islamic knowledge base..."):
             # Step 2: FAISS search with English query
-            results = search_fiqh(search_query, model, index, chunks, selected_category)
+            results, low_confidence = search_fiqh(search_query, model, index, chunks, selected_category)
             context = build_context(results)
+
+        if low_confidence:
+            st.warning("⚠️ No closely matching knowledge found. Answer may be general — consider rephrasing your question.")
 
         with st.spinner("📖 Generating scholarly answer..."):
             # Step 3: AI answer using original query (so it answers in user's language)
