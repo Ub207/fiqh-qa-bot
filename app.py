@@ -17,7 +17,7 @@ INDEX_PATH = "faiss_index/fiqh.index"
 CHUNKS_PATH = "faiss_index/chunks.pkl"
 CATEGORIES_PATH = "fiqh_data/fiqh_categories.json"
 MODEL_NAME = "all-MiniLM-L6-v2"
-GEMINI_MODEL = "gemini-flash-latest"
+GEMINI_MODEL = "gemini-1.5-flash-latest"
 TOP_K = 5
 HF_REPO_ID = "ubaid-ai/fiqh-qa-bot-data"
 
@@ -46,6 +46,34 @@ rather than inventing an answer.
 IMPORTANT DISCLAIMER: This is an educational tool, not a fatwa service. \
 Always recommend consulting a qualified scholar for personal rulings."""
 
+TRANSLATE_SYSTEM_PROMPT = """You are a search query translator.
+
+Your ONLY job: Convert Urdu or Roman Urdu queries into concise English search queries.
+
+Rules:
+- If input is Roman Urdu (e.g. "namaz ki ahmiat") → translate to English ("importance of prayer")
+- If input is Urdu script (e.g. "نماز کی اہمیت") → translate to English ("importance of prayer")
+- If input is already English → return it exactly as-is, no changes
+- Output ONLY the translated query — no explanation, no punctuation, no extra words
+- Keep it under 10 words
+- Focus on the Islamic Fiqh topic being asked about
+
+Examples:
+Input: "namaz ki ahmiat k bary my imam sahab ki ray btaen"
+Output: importance of prayer Hanafi ruling
+
+Input: "wudu karne ka tareeqa kya hai"
+Output: method of performing wudu ablution
+
+Input: "zakat ki nisab kitni hai"
+Output: nisab amount for zakat
+
+Input: "Can I pray sitting if I'm sick"
+Output: Can I pray sitting if I'm sick
+
+Input: "roza todny sy kia hota h"
+Output: what breaks the fast Ramadan"""
+
 EXAMPLE_QUESTIONS = [
     "Wudu karne ka tareeqa kya hai?",
     "What breaks the fast during Ramadan?",
@@ -68,10 +96,8 @@ st.set_page_config(
 # ── Custom CSS ───────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    /* ── Imports ── */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-    /* ── Reset & Base ── */
     :root {
         --teal:          #0D9488;
         --teal-dark:     #0F766E;
@@ -88,7 +114,6 @@ st.markdown("""
         --shadow-md:     0 4px 16px rgba(0,0,0,0.08);
     }
 
-    /* ── App shell ── */
     .stApp {
         background: #FFFFFF !important;
         color: var(--text);
@@ -101,300 +126,137 @@ st.markdown("""
         max-width: 860px !important;
     }
 
-    /* ── Sidebar ── */
     [data-testid="stSidebar"] {
         background: #FFFFFF !important;
         border-right: 1px solid var(--border) !important;
     }
-    [data-testid="stSidebar"] > div:first-child {
-        padding-top: 1.5rem;
-    }
+    [data-testid="stSidebar"] > div:first-child { padding-top: 1.5rem; }
     .sidebar-brand {
         text-align: center;
         padding: 0.5rem 1rem 1.5rem;
         border-bottom: 1px solid var(--border);
         margin-bottom: 1.5rem;
     }
-    .sidebar-icon {
-        font-size: 2.8rem;
-        line-height: 1;
-        margin-bottom: 0.5rem;
-    }
-    .sidebar-title {
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--teal-dark);
-        margin: 0.3rem 0 0.2rem;
-    }
-    .sidebar-desc {
-        font-size: 0.78rem;
-        color: var(--text-light);
-        line-height: 1.4;
-    }
+    .sidebar-icon { font-size: 2.8rem; line-height: 1; margin-bottom: 0.5rem; }
+    .sidebar-title { font-size: 1rem; font-weight: 700; color: var(--teal-dark); margin: 0.3rem 0 0.2rem; }
+    .sidebar-desc { font-size: 0.78rem; color: var(--text-light); line-height: 1.4; }
     .sidebar-meta {
-        margin-top: 1.5rem;
-        padding: 0.75rem 1rem;
-        background: var(--teal-lighter);
-        border-radius: 10px;
+        margin-top: 1.5rem; padding: 0.75rem 1rem;
+        background: var(--teal-lighter); border-radius: 10px;
         border: 1px solid var(--teal-border);
-        font-size: 0.75rem;
-        color: var(--teal-dark);
-        line-height: 1.7;
+        font-size: 0.75rem; color: var(--teal-dark); line-height: 1.7;
     }
     .sidebar-meta strong { font-weight: 600; }
 
-    /* ── Header ── */
     .main-header {
-        text-align: center;
-        padding: 2rem 1.5rem 1.5rem;
-        margin-bottom: 1.5rem;
-        border-bottom: 2px solid var(--teal-lighter);
-        position: relative;
-        animation: none !important;
-        opacity: 1 !important;
+        text-align: center; padding: 2rem 1.5rem 1.5rem;
+        margin-bottom: 1.5rem; border-bottom: 2px solid var(--teal-lighter);
+        animation: none !important; opacity: 1 !important;
     }
-    .header-arabic {
-        font-size: 1.35rem;
-        color: var(--teal);
-        direction: rtl;
-        font-weight: 600;
-        margin-bottom: 0.4rem;
-        letter-spacing: 0.02em;
-    }
-    .header-title {
-        font-size: 1.75rem;
-        font-weight: 700;
-        color: var(--text);
-        margin: 0.2rem 0;
-    }
+    .header-arabic { font-size: 1.35rem; color: var(--teal); direction: rtl; font-weight: 600; margin-bottom: 0.4rem; }
+    .header-title { font-size: 1.75rem; font-weight: 700; color: var(--text); margin: 0.2rem 0; }
     .header-title span { color: var(--teal); }
-    .header-sub {
-        font-size: 0.85rem;
-        color: var(--text-light);
-        margin-top: 0.4rem;
-    }
-    .header-line {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-top: 0.8rem;
-    }
-    .header-dot {
-        width: 6px; height: 6px;
-        border-radius: 50%;
-        background: var(--teal);
-        opacity: 0.4;
-    }
+    .header-sub { font-size: 0.85rem; color: var(--text-light); margin-top: 0.4rem; }
+    .header-line { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 0.8rem; }
+    .header-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); opacity: 0.4; }
     .header-dot.center { opacity: 1; width: 8px; height: 8px; }
 
-    /* ── Welcome Screen ── */
+    /* Translation notice */
+    .translation-notice {
+        background: #FFF7ED; border: 1px solid #FED7AA;
+        border-left: 4px solid #F97316; border-radius: 8px;
+        padding: 0.5rem 1rem; margin-bottom: 1rem;
+        font-size: 0.83rem; color: #9A3412;
+    }
+
     .welcome-wrap {
-        text-align: center;
-        padding: 2.5rem 1rem 2rem;
-        animation: none !important;
-        opacity: 1 !important;
+        text-align: center; padding: 2.5rem 1rem 2rem;
+        animation: none !important; opacity: 1 !important;
     }
     .welcome-icon { font-size: 3rem; margin-bottom: 0.75rem; }
-    .welcome-title {
-        font-size: 1.15rem;
-        font-weight: 600;
-        color: var(--text);
-        margin-bottom: 0.3rem;
-    }
-    .welcome-sub {
-        font-size: 0.9rem;
-        color: var(--text-light);
-        margin-bottom: 0.2rem;
-        direction: rtl;
-    }
-    .welcome-hint {
-        font-size: 0.82rem;
-        color: var(--text-muted);
-        margin-top: 1.2rem;
-    }
-    .example-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-        margin-top: 1.5rem;
-        padding: 0 0.5rem;
-    }
+    .welcome-title { font-size: 1.15rem; font-weight: 600; color: var(--text); margin-bottom: 0.3rem; }
+    .welcome-sub { font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.2rem; direction: rtl; }
+    .welcome-hint { font-size: 0.82rem; color: var(--text-muted); margin-top: 1.2rem; }
+    .example-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1.5rem; padding: 0 0.5rem; }
 
-    /* ── Chat Messages ── */
-    .msg-wrap-user {
-        display: flex;
-        justify-content: flex-end;
-        margin: 0.7rem 0;
-        animation: none !important;
-        opacity: 1 !important;
-    }
-    .msg-wrap-assistant {
-        display: flex;
-        justify-content: flex-start;
-        margin: 0.7rem 0;
-        animation: none !important;
-        opacity: 1 !important;
-    }
+    .msg-wrap-user { display: flex; justify-content: flex-end; margin: 0.7rem 0; animation: none !important; opacity: 1 !important; }
+    .msg-wrap-assistant { display: flex; justify-content: flex-start; margin: 0.7rem 0; animation: none !important; opacity: 1 !important; }
     .user-bubble {
-        background: var(--teal-light);
-        border-radius: 18px 18px 4px 18px;
-        padding: 0.85rem 1.1rem;
-        max-width: 75%;
-        color: #134E4A;
-        font-size: 0.95rem;
-        line-height: 1.55;
-        box-shadow: var(--shadow-sm);
+        background: var(--teal-light); border-radius: 18px 18px 4px 18px;
+        padding: 0.85rem 1.1rem; max-width: 75%; color: #134E4A;
+        font-size: 0.95rem; line-height: 1.55; box-shadow: var(--shadow-sm);
     }
-    .user-label {
-        font-size: 0.68rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.6px;
-        color: var(--teal-dark);
-        margin-bottom: 0.35rem;
-        opacity: 0.75;
-    }
+    .user-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--teal-dark); margin-bottom: 0.35rem; opacity: 0.75; }
     .assistant-card {
-        background: #FFFFFF;
-        border-left: 4px solid var(--teal);
-        border-radius: 0 16px 16px 0;
-        padding: 1rem 1.2rem;
-        max-width: 88%;
-        color: var(--text);
-        font-size: 0.95rem;
-        line-height: 1.6;
-        box-shadow: var(--shadow-md);
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-        border-right: 1px solid var(--border);
+        background: #FFFFFF; border-left: 4px solid var(--teal);
+        border-radius: 0 16px 16px 0; padding: 1rem 1.2rem; max-width: 88%;
+        color: var(--text); font-size: 0.95rem; line-height: 1.6;
+        box-shadow: var(--shadow-md); border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
     }
-    .assistant-label {
-        font-size: 0.68rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.6px;
-        color: var(--teal);
-        margin-bottom: 0.4rem;
-        opacity: 0.85;
-    }
+    .assistant-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--teal); margin-bottom: 0.4rem; opacity: 0.85; }
 
-    /* ── Sources Box ── */
     .sources-box {
-        background: var(--teal-lighter);
-        border: 1px solid var(--teal-border);
-        border-radius: 8px;
-        padding: 0.6rem 0.9rem;
-        margin-top: 0.85rem;
-        font-size: 0.78rem;
-        color: #0F766E;
-        line-height: 1.6;
+        background: var(--teal-lighter); border: 1px solid var(--teal-border);
+        border-radius: 8px; padding: 0.6rem 0.9rem; margin-top: 0.85rem;
+        font-size: 0.78rem; color: #0F766E; line-height: 1.6;
     }
     .sources-box strong { font-weight: 600; }
 
-    /* ── Input area ── */
     .stTextInput > div > div > input {
-        background: var(--bg-subtle) !important;
-        border: 1.5px solid var(--border) !important;
-        border-radius: 12px !important;
-        color: var(--text) !important;
-        font-size: 0.95rem !important;
-        padding: 0.7rem 1rem !important;
-        transition: none !important;
+        background: var(--bg-subtle) !important; border: 1.5px solid var(--border) !important;
+        border-radius: 12px !important; color: var(--text) !important;
+        font-size: 0.95rem !important; padding: 0.7rem 1rem !important; transition: none !important;
     }
     .stTextInput > div > div > input:focus {
-        border-color: var(--teal) !important;
-        background: #FFFFFF !important;
-        box-shadow: 0 0 0 3px rgba(13,148,136,0.12) !important;
-        outline: none !important;
+        border-color: var(--teal) !important; background: #FFFFFF !important;
+        box-shadow: 0 0 0 3px rgba(13,148,136,0.12) !important; outline: none !important;
     }
-    .stTextInput > div > div > input::placeholder {
-        color: var(--text-muted) !important;
-    }
+    .stTextInput > div > div > input::placeholder { color: var(--text-muted) !important; }
 
-    /* ── Buttons ── */
     .stButton > button {
-        background: var(--teal) !important;
-        color: #FFFFFF !important;
-        border: none !important;
-        border-radius: 10px !important;
-        font-weight: 600 !important;
-        font-size: 0.88rem !important;
-        padding: 0.6rem 1rem !important;
-        box-shadow: 0 2px 8px rgba(13,148,136,0.25) !important;
-        transition: none !important;
-        letter-spacing: 0.02em !important;
+        background: var(--teal) !important; color: #FFFFFF !important;
+        border: none !important; border-radius: 10px !important;
+        font-weight: 600 !important; font-size: 0.88rem !important;
+        padding: 0.6rem 1rem !important; box-shadow: 0 2px 8px rgba(13,148,136,0.25) !important;
+        transition: none !important; letter-spacing: 0.02em !important;
     }
-    .stButton > button:hover {
-        background: var(--teal-dark) !important;
-        box-shadow: 0 4px 14px rgba(13,148,136,0.3) !important;
-    }
-    .stButton > button:focus {
-        box-shadow: 0 0 0 3px rgba(13,148,136,0.2) !important;
-    }
+    .stButton > button:hover { background: var(--teal-dark) !important; box-shadow: 0 4px 14px rgba(13,148,136,0.3) !important; }
 
-    /* ── Selectbox ── */
     .stSelectbox > div > div {
-        background: var(--bg-subtle) !important;
-        border: 1.5px solid var(--border) !important;
-        border-radius: 10px !important;
-        color: var(--text) !important;
-        font-size: 0.88rem !important;
+        background: var(--bg-subtle) !important; border: 1.5px solid var(--border) !important;
+        border-radius: 10px !important; color: var(--text) !important; font-size: 0.88rem !important;
     }
-    .stSelectbox label {
-        color: var(--text-light) !important;
-        font-size: 0.8rem !important;
-        font-weight: 600 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.5px !important;
-    }
+    .stSelectbox label { color: var(--text-light) !important; font-size: 0.8rem !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.5px !important; }
 
-    /* ── Spinner ── */
-    .stSpinner > div {
-        border-top-color: var(--teal) !important;
-    }
-
-    /* ── Footer ── */
     .footer {
-        text-align: center;
-        padding: 1.2rem 1rem 0.5rem;
-        color: var(--text-muted);
-        font-size: 0.76rem;
-        border-top: 1px solid var(--border);
-        margin-top: 2.5rem;
-        line-height: 1.6;
+        text-align: center; padding: 1.2rem 1rem 0.5rem;
+        color: var(--text-muted); font-size: 0.76rem;
+        border-top: 1px solid var(--border); margin-top: 2.5rem; line-height: 1.6;
     }
     .footer strong { color: var(--text-light); font-weight: 600; }
 
-    /* ── Hide Streamlit chrome ── */
     #MainMenu, footer, header { visibility: hidden; }
     [data-testid="stToolbar"] { display: none; }
 
-    /* ── Scrollbar ── */
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: var(--teal-border); border-radius: 4px; }
 
-    /* ── Anti-flicker ── */
     .main-header, .user-bubble, .assistant-card,
     .sources-box, .footer, .welcome-wrap,
     [data-testid="stVerticalBlock"], .element-container {
-        animation: none !important;
-        transition: none !important;
-        opacity: 1 !important;
-        visibility: visible !important;
+        animation: none !important; transition: none !important;
+        opacity: 1 !important; visibility: visible !important;
     }
 </style>
 """, unsafe_allow_html=True)
 
 
-# ── Cloud Download (HuggingFace) ─────────────────────────────────────────────
+# ── Cloud Download ────────────────────────────────────────────────────────────
 def ensure_data_files():
-    """Download FAISS data from HuggingFace if not available locally (cloud deployment)."""
     index_dir = Path("faiss_index")
     data_dir = Path("fiqh_data")
-
     required = [
         (index_dir / "fiqh.index", "fiqh.index"),
         (index_dir / "chunks.pkl", "chunks.pkl"),
@@ -403,24 +265,18 @@ def ensure_data_files():
         (data_dir / "fiqh_qa.json", "fiqh_qa.json"),
         (data_dir / "fiqh_categories.json", "fiqh_categories.json"),
     ]
-
     if all(f.exists() for f, _ in required + data_files):
         return True
-
     try:
         from huggingface_hub import hf_hub_download
-
         index_dir.mkdir(exist_ok=True)
         data_dir.mkdir(exist_ok=True)
-
         for local_path, hf_filename in required + data_files:
             if not local_path.exists():
                 st.info(f"⏳ Downloading {hf_filename} from HuggingFace...")
                 hf_hub_download(
-                    repo_id=HF_REPO_ID,
-                    filename=hf_filename,
-                    repo_type="dataset",
-                    local_dir=str(local_path.parent),
+                    repo_id=HF_REPO_ID, filename=hf_filename,
+                    repo_type="dataset", local_dir=str(local_path.parent),
                     local_dir_use_symlinks=False,
                 )
         return True
@@ -431,16 +287,13 @@ def ensure_data_files():
         return False
 
 
-# ── Resource Loading ─────────────────────────────────────────────────────────
+# ── Resource Loading ──────────────────────────────────────────────────────────
 @st.cache_resource(show_spinner="Loading knowledge base...")
 def load_resources():
     if not os.path.exists(INDEX_PATH) or not os.path.exists(CHUNKS_PATH):
         with st.spinner("⏳ First launch: downloading Fiqh knowledge base from HuggingFace..."):
             if not ensure_data_files():
-                st.error(
-                    "FAISS index not found. Please run `python prepare_data.py` first.",
-                    icon="⚠️",
-                )
+                st.error("FAISS index not found. Please run `python prepare_data.py` first.", icon="⚠️")
                 st.stop()
     model = SentenceTransformer(MODEL_NAME)
     index = faiss.read_index(INDEX_PATH)
@@ -463,7 +316,33 @@ def get_gemini_client():
     return genai.Client(api_key=api_key)
 
 
-# ── RAG Search ───────────────────────────────────────────────────────────────
+# ── Translation Helper ────────────────────────────────────────────────────────
+def translate_query_to_english(query: str, client) -> tuple[str, bool]:
+    """
+    Roman Urdu / Urdu queries ko English mein translate karo for better FAISS search.
+    Returns: (translated_query, was_translated)
+    """
+    if client is None:
+        return query, False
+    try:
+        chat = client.chats.create(
+            model=GEMINI_MODEL,
+            config=genai_types.GenerateContentConfig(
+                system_instruction=TRANSLATE_SYSTEM_PROMPT,
+                temperature=0.1,
+                max_output_tokens=30,
+            ),
+        )
+        resp = chat.send_message(query)
+        translated = resp.text.strip()
+        was_translated = translated.lower() != query.lower()
+        return translated, was_translated
+    except Exception:
+        # Translation fail ho toh original query use karo — app crash na ho
+        return query, False
+
+
+# ── RAG Search ────────────────────────────────────────────────────────────────
 def search_fiqh(query, model, index, chunks, category_filter="All", k=TOP_K):
     query_vec = model.encode([query], convert_to_numpy=True).astype(np.float32)
     faiss.normalize_L2(query_vec)
@@ -495,7 +374,7 @@ def build_context(results):
     return "\n\n---\n\n".join(parts)
 
 
-# ── LLM Response ─────────────────────────────────────────────────────────────
+# ── LLM Response ──────────────────────────────────────────────────────────────
 def get_answer(client, query, context, chat_history):
     history = []
     for h in chat_history[-6:]:
@@ -518,17 +397,18 @@ def get_answer(client, query, context, chat_history):
         resp = chat.send_message(user_msg)
         return resp.text
     except Exception as e:
+        err = str(e).lower()
+        if "429" in err or "quota" in err or "rate" in err:
+            return "⏳ AI is resting for a moment. Please wait 1-2 minutes and try again."
         return f"⚠️ **Error:** {e}\n\nPlease try again."
 
 
-# ── Rendering Helpers ─────────────────────────────────────────────────────────
+# ── Rendering ─────────────────────────────────────────────────────────────────
 def render_message(role, content, sources=None):
     if role == "user":
         st.markdown(
-            f"<div class='msg-wrap-user'>"
-            f"<div class='user-bubble'>"
-            f"<div class='user-label'>You</div>"
-            f"{content}"
+            f"<div class='msg-wrap-user'><div class='user-bubble'>"
+            f"<div class='user-label'>You</div>{content}"
             f"</div></div>",
             unsafe_allow_html=True,
         )
@@ -537,8 +417,7 @@ def render_message(role, content, sources=None):
         if sources:
             for _, chunk in sources[:3]:
                 quran = ", ".join(chunk["quran_refs"]) if chunk["quran_refs"] else "—"
-                hadith = (", ".join(chunk["hadith_refs"][:2])
-                          if chunk["hadith_refs"] else "—")
+                hadith = ", ".join(chunk["hadith_refs"][:2]) if chunk["hadith_refs"] else "—"
                 refs_html += (
                     f"<b>{chunk['category']}</b> · "
                     f"Quran: {quran} · Hadith: {hadith} · "
@@ -549,11 +428,9 @@ def render_message(role, content, sources=None):
             if refs_html else ""
         )
         st.markdown(
-            f"<div class='msg-wrap-assistant'>"
-            f"<div class='assistant-card'>"
+            f"<div class='msg-wrap-assistant'><div class='assistant-card'>"
             f"<div class='assistant-label'>☪ Fiqh Assistant</div>"
-            f"{content}"
-            f"{sources_section}"
+            f"{content}{sources_section}"
             f"</div></div>",
             unsafe_allow_html=True,
         )
@@ -572,7 +449,7 @@ def render_sidebar(categories):
             </div>
             <div class='sidebar-meta'>
                 <strong>School:</strong> Hanafi · حنفی مذہب<br>
-                <strong>LLM:</strong> Gemini 2.0 Flash<br>
+                <strong>LLM:</strong> Gemini 1.5 Flash<br>
                 <strong>Embeddings:</strong> all-MiniLM-L6-v2<br>
                 <strong>Sources:</strong> Darul Uloom Deoband + Classical texts
             </div>
@@ -587,6 +464,7 @@ def render_sidebar(categories):
         if st.button("🗑️ Clear Conversation", use_container_width=True):
             st.session_state.messages = []
             st.session_state.sources_map = {}
+            st.session_state.pop("_last_translated", None)
             st.rerun()
 
     return selected
@@ -607,7 +485,7 @@ def main():
 
     selected_category = render_sidebar(categories)
 
-    # ── Header ────────────────────────────────────────────────────────────────
+    # Header
     st.markdown("""
     <div class='main-header'>
         <div class='header-arabic'>مساعد الفقه الإسلامي</div>
@@ -616,27 +494,26 @@ def main():
             Hanafi school · Fatawa Darul Uloom Deoband · Quran &amp; Hadith references
         </div>
         <div class='header-line'>
-            <div class='header-dot'></div>
-            <div class='header-dot'></div>
+            <div class='header-dot'></div><div class='header-dot'></div>
             <div class='header-dot center'></div>
-            <div class='header-dot'></div>
-            <div class='header-dot'></div>
+            <div class='header-dot'></div><div class='header-dot'></div>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
-    # ── Chat history or welcome screen ────────────────────────────────────────
+    # Chat or welcome screen
     if not st.session_state.messages:
         st.markdown("""
         <div class='welcome-wrap'>
             <div class='welcome-icon'>📖</div>
             <div class='welcome-title'>Assalamu Alaykum — How can I help?</div>
             <div class='welcome-sub'>السلام علیکم! اسلامی فقہ کے بارے میں کوئی بھی سوال پوچھیں</div>
-            <div class='welcome-hint'>Try one of the examples below, or type your own question</div>
+            <div class='welcome-hint'>
+                Ask in <strong>English</strong>, <strong>Urdu</strong>, or <strong>Roman Urdu</strong> — all supported!
+            </div>
             <div class='example-grid'>
         """, unsafe_allow_html=True)
 
-        # Render example question buttons in a tight grid
         cols = st.columns(2)
         for i, q in enumerate(EXAMPLE_QUESTIONS):
             with cols[i % 2]:
@@ -653,7 +530,7 @@ def main():
                 sources if msg["role"] == "assistant" else None,
             )
 
-    # ── Input area ────────────────────────────────────────────────────────────
+    # Input area
     st.markdown("<br>", unsafe_allow_html=True)
     col1, col2 = st.columns([7, 1])
     with col1:
@@ -661,7 +538,7 @@ def main():
         user_input = st.text_input(
             "Ask a fiqh question",
             value=default_val,
-            placeholder="e.g., What breaks wudu? · Zakat ki nisab kya hai?",
+            placeholder="e.g., namaz ki ahmiat kya hai? · What breaks wudu? · نماز کے فرائض",
             label_visibility="collapsed",
             key="chat_input",
         )
@@ -671,7 +548,7 @@ def main():
     if st.session_state.pending_question:
         st.session_state.pending_question = None
 
-    # ── Process query ─────────────────────────────────────────────────────────
+    # Process query
     if (send or user_input) and user_input.strip():
         query = user_input.strip()
 
@@ -679,9 +556,27 @@ def main():
         st.session_state.messages.append({"role": "user", "content": query, "id": msg_id})
         render_message("user", query)
 
-        with st.spinner("Searching Islamic knowledge base..."):
-            results = search_fiqh(query, model, index, chunks, selected_category)
+        with st.spinner("🔄 Processing your query..."):
+            # Step 1: Translate Roman Urdu / Urdu → English for FAISS
+            search_query, was_translated = translate_query_to_english(query, client)
+
+        # Show translation notice
+        if was_translated and search_query.lower() != query.lower():
+            st.markdown(
+                f"<div class='translation-notice'>"
+                f"🔄 <strong>Query translated:</strong> \"{query}\" "
+                f"→ searched as \"<strong>{search_query}</strong>\" for better results"
+                f"</div>",
+                unsafe_allow_html=True,
+            )
+
+        with st.spinner("🔍 Searching Islamic knowledge base..."):
+            # Step 2: FAISS search with English query
+            results = search_fiqh(search_query, model, index, chunks, selected_category)
             context = build_context(results)
+
+        with st.spinner("📖 Generating scholarly answer..."):
+            # Step 3: AI answer using original query (so it answers in user's language)
             answer = get_answer(client, query, context, st.session_state.messages[:-1])
 
         ans_id = len(st.session_state.messages)
@@ -689,7 +584,7 @@ def main():
         st.session_state.sources_map[ans_id] = results
         render_message("assistant", answer, results)
 
-    # ── Footer ────────────────────────────────────────────────────────────────
+    # Footer
     st.markdown("""
     <div class='footer'>
         ⚠️ <strong>Educational tool only — not a fatwa service.</strong>
