@@ -16,6 +16,6 @@ An AI-powered Q&A bot grounded in classical Hanafi scholarship and Fatawa Darul 
 - Classical Hanafi texts (Hidayah, Durr al-Mukhtar, Radd al-Muhtar, Bahishti Zewar)
 - Quran and Hadith references
 
-**Stack:** Gemini 2.0 Flash · FAISS · all-MiniLM-L6-v2 · Streamlit
+**Stack:** Llama 3.3 70B (Groq) · FAISS · all-MiniLM-L6-v2 · Streamlit · Docker
 
 > ⚠️ Educational tool only — not a fatwa service. Consult a qualified Mufti for personal rulings.
